@@ -1,0 +1,1292 @@
+[
+    {
+        "id": 1,
+        "title": "Tiếng Gõ Đêm Khuya",
+        "description": [
+            "Đêm khuya, tiếng gõ cửa vang lên nhẹ nhưng gấp.",
+            "Là bác hàng xóm. Bác xin trú nhờ vì lính tuần đang lùng bắt ngoài đường."
+        ],
+        "left_choice": "Option L",
+        "right_choice": "Option R",
+        "effects": {
+            "left": {
+                "anNinh": 0,
+                "kinhTe": 0,
+                "doanKet": 0,
+                "niemTin": 0
+            },
+            "right": {
+                "anNinh": 0,
+                "kinhTe": 0,
+                "doanKet": 0,
+                "niemTin": 0
+            }
+        }
+    },
+    {
+        "id": 2,
+        "title": "Mẩu Giấy Bí Ẩn",
+        "description": [
+            "Sáng hôm sau, bạn thấy một mẩu giấy lạ nằm dưới gầm cửa.",
+            "Chỉ vài ký hiệu nguệch ngoạc… hay là tín hiệu của ai đó?"
+        ],
+        "left_choice": "Option L",
+        "right_choice": "Option R",
+        "effects": {
+            "left": {
+                "anNinh": 0,
+                "kinhTe": 0,
+                "doanKet": 0,
+                "niemTin": 0
+            },
+            "right": {
+                "anNinh": 0,
+                "kinhTe": 0,
+                "doanKet": 0,
+                "niemTin": 0
+            }
+        }
+    },
+    {
+        "id": 3,
+        "title": [
+            "Hai lính tuần ghé nhà, hỏi tối qua có ai lạ ra vào không.",
+            "Ánh mắt họ soi từng góc nhà, vẻ đầy nghi ngờ."
+        ],
+        "description": "Event placeholder",
+        "left_choice": "Option L",
+        "right_choice": "Option R",
+        "effects": {
+            "left": {
+                "anNinh": 0,
+                "kinhTe": 0,
+                "doanKet": 0,
+                "niemTin": 0
+            },
+            "right": {
+                "anNinh": 0,
+                "kinhTe": 0,
+                "doanKet": 0,
+                "niemTin": 0
+            }
+        }
+    },
+    {
+        "id": 4,
+        "title": "Dấu Chân Sau Vườn",
+        "description": [
+            "Sau vườn có dấu chân lạ. Đêm qua chắc có người quanh đây.",
+            "Là người chạy trốn… hay kẻ theo dõi gia đình bạn?"
+        ],
+        "left_choice": "Option L",
+        "right_choice": "Option R",
+        "effects": {
+            "left": {
+                "anNinh": 0,
+                "kinhTe": 0,
+                "doanKet": 0,
+                "niemTin": 0
+            },
+            "right": {
+                "anNinh": 0,
+                "kinhTe": 0,
+                "doanKet": 0,
+                "niemTin": 0
+            }
+        }
+    },
+    {
+        "id": 5,
+        "title": "Tin Đồn Về Bác Hàng Xóm",
+        "description": [
+            "Trong làng rộ lên tin đồn: bác hàng xóm có liên quan đến phong trào yêu nước.",
+            "Một số người nói bác là chỉ điểm. Người khác bảo bác là người tốt."
+        ],
+        "left_choice": "Option L",
+        "right_choice": "Option R",
+        "effects": {
+            "left": {
+                "anNinh": 0,
+                "kinhTe": 0,
+                "doanKet": 0,
+                "niemTin": 0
+            },
+            "right": {
+                "anNinh": 0,
+                "kinhTe": 0,
+                "doanKet": 0,
+                "niemTin": 0
+            }
+        }
+    },
+    {
+        "id": 6,
+        "title": "Lời Mời Làm Việc Nhà Giàu",
+        "description": [
+            "Một gia đình giàu trong làng mời bạn làm việc lặt vặt.",
+            "Lương khá… nhưng họ nổi tiếng thân lính Pháp."
+        ],
+        "left_choice": "Option L",
+        "right_choice": "Option R",
+        "effects": {
+            "left": {
+                "anNinh": 0,
+                "kinhTe": 0,
+                "doanKet": 0,
+                "niemTin": 0
+            },
+            "right": {
+                "anNinh": 0,
+                "kinhTe": 0,
+                "doanKet": 0,
+                "niemTin": 0
+            }
+        }
+    },
+    {
+        "id": 7,
+        "title": "Tư Sản Đề Nghị Bán Rẻ Lúa",
+        "description": [
+            "Một tay tư sản muốn mua lúa nhà bạn với giá thấp bất thường.",
+            "Ông ta nói đây là “giúp đỡ”. Nhưng ánh mắt lại không giống vậy."
+        ],
+        "left_choice": "Option L",
+        "right_choice": "Option R",
+        "effects": {
+            "left": {
+                "anNinh": 0,
+                "kinhTe": 0,
+                "doanKet": 0,
+                "niemTin": 0
+            },
+            "right": {
+                "anNinh": 0,
+                "kinhTe": 0,
+                "doanKet": 0,
+                "niemTin": 0
+            }
+        }
+    },
+    {
+        "id": 8,
+        "title": "Cho Vay Nặng Lãi",
+        "description": [
+            "Một người lạ đề nghị cho gia đình bạn vay tiền nhanh.",
+            "Lãi suất thì… cao đến mức đáng sợ."
+        ],
+        "left_choice": "Option L",
+        "right_choice": "Option R",
+        "effects": {
+            "left": {
+                "anNinh": 0,
+                "kinhTe": 0,
+                "doanKet": 0,
+                "niemTin": 0
+            },
+            "right": {
+                "anNinh": 0,
+                "kinhTe": 0,
+                "doanKet": 0,
+                "niemTin": 0
+            }
+        }
+    },
+    {
+        "id": 9,
+        "title": "Hối Lộ Nhẹ",
+        "description": [
+            "Một lính tuần kín đáo gợi ý: đưa ít quà bánh thì sẽ ‘bỏ qua’ kiểm tra nhà.",
+            "Gia đình bạn đang bị họ để ý nhiều hơn."
+        ],
+        "left_choice": "Option L",
+        "right_choice": "Option R",
+        "effects": {
+            "left": {
+                "anNinh": 0,
+                "kinhTe": 0,
+                "doanKet": 0,
+                "niemTin": 0
+            },
+            "right": {
+                "anNinh": 0,
+                "kinhTe": 0,
+                "doanKet": 0,
+                "niemTin": 0
+            }
+        }
+    },
+    {
+        "id": 10,
+        "title": "Đầu Tư Mạo Hiểm",
+        "description": [
+            "Có người rủ bạn góp vốn vào một chuyến buôn lậu muối.",
+            "Nếu lời thì kinh tế gia đình khá lên, nếu lỗ thì trắng tay."
+        ],
+        "left_choice": "Option L",
+        "right_choice": "Option R",
+        "effects": {
+            "left": {
+                "anNinh": 0,
+                "kinhTe": 0,
+                "doanKet": 0,
+                "niemTin": 0
+            },
+            "right": {
+                "anNinh": 0,
+                "kinhTe": 0,
+                "doanKet": 0,
+                "niemTin": 0
+            }
+        }
+    },
+    {
+        "id": 11,
+        "title": "Vụ Mùa Xấu",
+        "description": "Event placeholder",
+        "left_choice": "Option L",
+        "right_choice": "Option R",
+        "effects": {
+            "left": {
+                "anNinh": 0,
+                "kinhTe": 0,
+                "doanKet": 0,
+                "niemTin": 0
+            },
+            "right": {
+                "anNinh": 0,
+                "kinhTe": 0,
+                "doanKet": 0,
+                "niemTin": 0
+            }
+        }
+    },
+    {
+        "id": 12,
+        "title": "Đổi Vàng Sang Lúa",
+        "description": "Event placeholder",
+        "left_choice": "Option L",
+        "right_choice": "Option R",
+        "effects": {
+            "left": {
+                "anNinh": 0,
+                "kinhTe": 0,
+                "doanKet": 0,
+                "niemTin": 0
+            },
+            "right": {
+                "anNinh": 0,
+                "kinhTe": 0,
+                "doanKet": 0,
+                "niemTin": 0
+            }
+        }
+    },
+    {
+        "id": 13,
+        "title": "Anh Trai Muốn Bỏ Học Đi Làm",
+        "description": "Event placeholder",
+        "left_choice": "Option L",
+        "right_choice": "Option R",
+        "effects": {
+            "left": {
+                "anNinh": 0,
+                "kinhTe": 0,
+                "doanKet": 0,
+                "niemTin": 0
+            },
+            "right": {
+                "anNinh": 0,
+                "kinhTe": 0,
+                "doanKet": 0,
+                "niemTin": 0
+            }
+        }
+    },
+    {
+        "id": 14,
+        "title": "Em Gái Muốn Học Chữ Tây",
+        "description": "Event placeholder",
+        "left_choice": "Option L",
+        "right_choice": "Option R",
+        "effects": {
+            "left": {
+                "anNinh": 0,
+                "kinhTe": 0,
+                "doanKet": 0,
+                "niemTin": 0
+            },
+            "right": {
+                "anNinh": 0,
+                "kinhTe": 0,
+                "doanKet": 0,
+                "niemTin": 0
+            }
+        }
+    },
+    {
+        "id": 15,
+        "title": "Chợ Tăng Thuế",
+        "description": "Event placeholder",
+        "left_choice": "Option L",
+        "right_choice": "Option R",
+        "effects": {
+            "left": {
+                "anNinh": 0,
+                "kinhTe": 0,
+                "doanKet": 0,
+                "niemTin": 0
+            },
+            "right": {
+                "anNinh": 0,
+                "kinhTe": 0,
+                "doanKet": 0,
+                "niemTin": 0
+            }
+        }
+    },
+    {
+        "id": 16,
+        "title": "Điểm Danh Dân Đinh",
+        "description": "Event placeholder",
+        "left_choice": "Option L",
+        "right_choice": "Option R",
+        "effects": {
+            "left": {
+                "anNinh": 0,
+                "kinhTe": 0,
+                "doanKet": 0,
+                "niemTin": 0
+            },
+            "right": {
+                "anNinh": 0,
+                "kinhTe": 0,
+                "doanKet": 0,
+                "niemTin": 0
+            }
+        }
+    },
+    {
+        "id": 17,
+        "title": "Lính Lục Soát",
+        "description": "Event placeholder",
+        "left_choice": "Option L",
+        "right_choice": "Option R",
+        "effects": {
+            "left": {
+                "anNinh": 0,
+                "kinhTe": 0,
+                "doanKet": 0,
+                "niemTin": 0
+            },
+            "right": {
+                "anNinh": 0,
+                "kinhTe": 0,
+                "doanKet": 0,
+                "niemTin": 0
+            }
+        }
+    },
+    {
+        "id": 18,
+        "title": "Chỉ Điểm Trong Làng",
+        "description": "Event placeholder",
+        "left_choice": "Option L",
+        "right_choice": "Option R",
+        "effects": {
+            "left": {
+                "anNinh": 0,
+                "kinhTe": 0,
+                "doanKet": 0,
+                "niemTin": 0
+            },
+            "right": {
+                "anNinh": 0,
+                "kinhTe": 0,
+                "doanKet": 0,
+                "niemTin": 0
+            }
+        }
+    },
+    {
+        "id": 19,
+        "title": "Tin Mật Thám",
+        "description": "Event placeholder",
+        "left_choice": "Option L",
+        "right_choice": "Option R",
+        "effects": {
+            "left": {
+                "anNinh": 0,
+                "kinhTe": 0,
+                "doanKet": 0,
+                "niemTin": 0
+            },
+            "right": {
+                "anNinh": 0,
+                "kinhTe": 0,
+                "doanKet": 0,
+                "niemTin": 0
+            }
+        }
+    },
+    {
+        "id": 20,
+        "title": "Người Lạ Xin Nước",
+        "description": "Event placeholder",
+        "left_choice": "Option L",
+        "right_choice": "Option R",
+        "effects": {
+            "left": {
+                "anNinh": 0,
+                "kinhTe": 0,
+                "doanKet": 0,
+                "niemTin": 0
+            },
+            "right": {
+                "anNinh": 0,
+                "kinhTe": 0,
+                "doanKet": 0,
+                "niemTin": 0
+            }
+        }
+    },
+    {
+        "id": 21,
+        "title": "Anh Trai Tham Gia Thanh Niên",
+        "description": "Event placeholder",
+        "left_choice": "Option L",
+        "right_choice": "Option R",
+        "effects": {
+            "left": {
+                "anNinh": 0,
+                "kinhTe": 0,
+                "doanKet": 0,
+                "niemTin": 0
+            },
+            "right": {
+                "anNinh": 0,
+                "kinhTe": 0,
+                "doanKet": 0,
+                "niemTin": 0
+            }
+        }
+    },
+    {
+        "id": 22,
+        "title": "Em Gái Muốn Tham Gia Hội Phụ Nữ",
+        "description": "Event placeholder",
+        "left_choice": "Option L",
+        "right_choice": "Option R",
+        "effects": {
+            "left": {
+                "anNinh": 0,
+                "kinhTe": 0,
+                "doanKet": 0,
+                "niemTin": 0
+            },
+            "right": {
+                "anNinh": 0,
+                "kinhTe": 0,
+                "doanKet": 0,
+                "niemTin": 0
+            }
+        }
+    },
+    {
+        "id": 23,
+        "title": "Con Cãi Lời",
+        "description": "Event placeholder",
+        "left_choice": "Option L",
+        "right_choice": "Option R",
+        "effects": {
+            "left": {
+                "anNinh": 0,
+                "kinhTe": 0,
+                "doanKet": 0,
+                "niemTin": 0
+            },
+            "right": {
+                "anNinh": 0,
+                "kinhTe": 0,
+                "doanKet": 0,
+                "niemTin": 0
+            }
+        }
+    },
+    {
+        "id": 24,
+        "title": "Học Nhạc Cụ Tây",
+        "description": "Event placeholder",
+        "left_choice": "Option L",
+        "right_choice": "Option R",
+        "effects": {
+            "left": {
+                "anNinh": 0,
+                "kinhTe": 0,
+                "doanKet": 0,
+                "niemTin": 0
+            },
+            "right": {
+                "anNinh": 0,
+                "kinhTe": 0,
+                "doanKet": 0,
+                "niemTin": 0
+            }
+        }
+    },
+    {
+        "id": 25,
+        "title": "Xung Đột Anh Em",
+        "description": "Event placeholder",
+        "left_choice": "Option L",
+        "right_choice": "Option R",
+        "effects": {
+            "left": {
+                "anNinh": 0,
+                "kinhTe": 0,
+                "doanKet": 0,
+                "niemTin": 0
+            },
+            "right": {
+                "anNinh": 0,
+                "kinhTe": 0,
+                "doanKet": 0,
+                "niemTin": 0
+            }
+        }
+    },
+    {
+        "id": 26,
+        "title": "Chó Sủa Ban Đêm",
+        "description": "Event placeholder",
+        "left_choice": "Option L",
+        "right_choice": "Option R",
+        "effects": {
+            "left": {
+                "anNinh": 0,
+                "kinhTe": 0,
+                "doanKet": 0,
+                "niemTin": 0
+            },
+            "right": {
+                "anNinh": 0,
+                "kinhTe": 0,
+                "doanKet": 0,
+                "niemTin": 0
+            }
+        }
+    },
+    {
+        "id": 27,
+        "title": "Mèo Hoang Ăn Gạo",
+        "description": "Event placeholder",
+        "left_choice": "Option L",
+        "right_choice": "Option R",
+        "effects": {
+            "left": {
+                "anNinh": 0,
+                "kinhTe": 0,
+                "doanKet": 0,
+                "niemTin": 0
+            },
+            "right": {
+                "anNinh": 0,
+                "kinhTe": 0,
+                "doanKet": 0,
+                "niemTin": 0
+            }
+        }
+    },
+    {
+        "id": 28,
+        "title": "Chó Cắn Người Lạ",
+        "description": "Event placeholder",
+        "left_choice": "Option L",
+        "right_choice": "Option R",
+        "effects": {
+            "left": {
+                "anNinh": 0,
+                "kinhTe": 0,
+                "doanKet": 0,
+                "niemTin": 0
+            },
+            "right": {
+                "anNinh": 0,
+                "kinhTe": 0,
+                "doanKet": 0,
+                "niemTin": 0
+            }
+        }
+    },
+    {
+        "id": 29,
+        "title": "Mèo Dẫn Lính",
+        "description": "Event placeholder",
+        "left_choice": "Option L",
+        "right_choice": "Option R",
+        "effects": {
+            "left": {
+                "anNinh": 0,
+                "kinhTe": 0,
+                "doanKet": 0,
+                "niemTin": 0
+            },
+            "right": {
+                "anNinh": 0,
+                "kinhTe": 0,
+                "doanKet": 0,
+                "niemTin": 0
+            }
+        }
+    },
+    {
+        "id": 30,
+        "title": "Chó Bảo Vệ Bác",
+        "description": "Event placeholder",
+        "left_choice": "Option L",
+        "right_choice": "Option R",
+        "effects": {
+            "left": {
+                "anNinh": 0,
+                "kinhTe": 0,
+                "doanKet": 0,
+                "niemTin": 0
+            },
+            "right": {
+                "anNinh": 0,
+                "kinhTe": 0,
+                "doanKet": 0,
+                "niemTin": 0
+            }
+        }
+    },
+    {
+        "id": 31,
+        "title": "Giá Muối Tăng",
+        "description": "Event placeholder",
+        "left_choice": "Option L",
+        "right_choice": "Option R",
+        "effects": {
+            "left": {
+                "anNinh": 0,
+                "kinhTe": 0,
+                "doanKet": 0,
+                "niemTin": 0
+            },
+            "right": {
+                "anNinh": 0,
+                "kinhTe": 0,
+                "doanKet": 0,
+                "niemTin": 0
+            }
+        }
+    },
+    {
+        "id": 32,
+        "title": "Dịch Bệnh",
+        "description": "Event placeholder",
+        "left_choice": "Option L",
+        "right_choice": "Option R",
+        "effects": {
+            "left": {
+                "anNinh": 0,
+                "kinhTe": 0,
+                "doanKet": 0,
+                "niemTin": 0
+            },
+            "right": {
+                "anNinh": 0,
+                "kinhTe": 0,
+                "doanKet": 0,
+                "niemTin": 0
+            }
+        }
+    },
+    {
+        "id": 33,
+        "title": "Phong Trào Tự Học",
+        "description": "Event placeholder",
+        "left_choice": "Option L",
+        "right_choice": "Option R",
+        "effects": {
+            "left": {
+                "anNinh": 0,
+                "kinhTe": 0,
+                "doanKet": 0,
+                "niemTin": 0
+            },
+            "right": {
+                "anNinh": 0,
+                "kinhTe": 0,
+                "doanKet": 0,
+                "niemTin": 0
+            }
+        }
+    },
+    {
+        "id": 34,
+        "title": "Dân Canh Gác",
+        "description": "Event placeholder",
+        "left_choice": "Option L",
+        "right_choice": "Option R",
+        "effects": {
+            "left": {
+                "anNinh": 0,
+                "kinhTe": 0,
+                "doanKet": 0,
+                "niemTin": 0
+            },
+            "right": {
+                "anNinh": 0,
+                "kinhTe": 0,
+                "doanKet": 0,
+                "niemTin": 0
+            }
+        }
+    },
+    {
+        "id": 35,
+        "title": "Tiếng Súng Xa",
+        "description": "Event placeholder",
+        "left_choice": "Option L",
+        "right_choice": "Option R",
+        "effects": {
+            "left": {
+                "anNinh": 0,
+                "kinhTe": 0,
+                "doanKet": 0,
+                "niemTin": 0
+            },
+            "right": {
+                "anNinh": 0,
+                "kinhTe": 0,
+                "doanKet": 0,
+                "niemTin": 0
+            }
+        }
+    },
+    {
+        "id": 36,
+        "title": "Thu Thuế",
+        "description": "Event placeholder",
+        "left_choice": "Option L",
+        "right_choice": "Option R",
+        "effects": {
+            "left": {
+                "anNinh": 0,
+                "kinhTe": 0,
+                "doanKet": 0,
+                "niemTin": 0
+            },
+            "right": {
+                "anNinh": 0,
+                "kinhTe": 0,
+                "doanKet": 0,
+                "niemTin": 0
+            }
+        }
+    },
+    {
+        "id": 37,
+        "title": "Chợ Hỗn Loạn",
+        "description": "Event placeholder",
+        "left_choice": "Option L",
+        "right_choice": "Option R",
+        "effects": {
+            "left": {
+                "anNinh": 0,
+                "kinhTe": 0,
+                "doanKet": 0,
+                "niemTin": 0
+            },
+            "right": {
+                "anNinh": 0,
+                "kinhTe": 0,
+                "doanKet": 0,
+                "niemTin": 0
+            }
+        }
+    },
+    {
+        "id": 38,
+        "title": "Hạn Hán",
+        "description": "Event placeholder",
+        "left_choice": "Option L",
+        "right_choice": "Option R",
+        "effects": {
+            "left": {
+                "anNinh": 0,
+                "kinhTe": 0,
+                "doanKet": 0,
+                "niemTin": 0
+            },
+            "right": {
+                "anNinh": 0,
+                "kinhTe": 0,
+                "doanKet": 0,
+                "niemTin": 0
+            }
+        }
+    },
+    {
+        "id": 39,
+        "title": "Lính Hỏi Đường",
+        "description": "Event placeholder",
+        "left_choice": "Option L",
+        "right_choice": "Option R",
+        "effects": {
+            "left": {
+                "anNinh": 0,
+                "kinhTe": 0,
+                "doanKet": 0,
+                "niemTin": 0
+            },
+            "right": {
+                "anNinh": 0,
+                "kinhTe": 0,
+                "doanKet": 0,
+                "niemTin": 0
+            }
+        }
+    },
+    {
+        "id": 40,
+        "title": "Tranh Chấp Đất Ranh",
+        "description": "Event placeholder",
+        "left_choice": "Option L",
+        "right_choice": "Option R",
+        "effects": {
+            "left": {
+                "anNinh": 0,
+                "kinhTe": 0,
+                "doanKet": 0,
+                "niemTin": 0
+            },
+            "right": {
+                "anNinh": 0,
+                "kinhTe": 0,
+                "doanKet": 0,
+                "niemTin": 0
+            }
+        }
+    },
+    {
+        "id": 41,
+        "title": "Đi Lính Hay Không",
+        "description": "Event placeholder",
+        "left_choice": "Option L",
+        "right_choice": "Option R",
+        "effects": {
+            "left": {
+                "anNinh": 0,
+                "kinhTe": 0,
+                "doanKet": 0,
+                "niemTin": 0
+            },
+            "right": {
+                "anNinh": 0,
+                "kinhTe": 0,
+                "doanKet": 0,
+                "niemTin": 0
+            }
+        }
+    },
+    {
+        "id": 42,
+        "title": "Việc Nặng Trong Làng",
+        "description": "Event placeholder",
+        "left_choice": "Option L",
+        "right_choice": "Option R",
+        "effects": {
+            "left": {
+                "anNinh": 0,
+                "kinhTe": 0,
+                "doanKet": 0,
+                "niemTin": 0
+            },
+            "right": {
+                "anNinh": 0,
+                "kinhTe": 0,
+                "doanKet": 0,
+                "niemTin": 0
+            }
+        }
+    },
+    {
+        "id": 43,
+        "title": "Vác Bao Tài Liệu",
+        "description": "Event placeholder",
+        "left_choice": "Option L",
+        "right_choice": "Option R",
+        "effects": {
+            "left": {
+                "anNinh": 0,
+                "kinhTe": 0,
+                "doanKet": 0,
+                "niemTin": 0
+            },
+            "right": {
+                "anNinh": 0,
+                "kinhTe": 0,
+                "doanKet": 0,
+                "niemTin": 0
+            }
+        }
+    },
+    {
+        "id": 44,
+        "title": "Coi Kho",
+        "description": "Event placeholder",
+        "left_choice": "Option L",
+        "right_choice": "Option R",
+        "effects": {
+            "left": {
+                "anNinh": 0,
+                "kinhTe": 0,
+                "doanKet": 0,
+                "niemTin": 0
+            },
+            "right": {
+                "anNinh": 0,
+                "kinhTe": 0,
+                "doanKet": 0,
+                "niemTin": 0
+            }
+        }
+    },
+    {
+        "id": 45,
+        "title": "Tranh Cãi Trưởng Làng",
+        "description": "Event placeholder",
+        "left_choice": "Option L",
+        "right_choice": "Option R",
+        "effects": {
+            "left": {
+                "anNinh": 0,
+                "kinhTe": 0,
+                "doanKet": 0,
+                "niemTin": 0
+            },
+            "right": {
+                "anNinh": 0,
+                "kinhTe": 0,
+                "doanKet": 0,
+                "niemTin": 0
+            }
+        }
+    },
+    {
+        "id": 46,
+        "title": "Đổi Công",
+        "description": "Event placeholder",
+        "left_choice": "Option L",
+        "right_choice": "Option R",
+        "effects": {
+            "left": {
+                "anNinh": 0,
+                "kinhTe": 0,
+                "doanKet": 0,
+                "niemTin": 0
+            },
+            "right": {
+                "anNinh": 0,
+                "kinhTe": 0,
+                "doanKet": 0,
+                "niemTin": 0
+            }
+        }
+    },
+    {
+        "id": 47,
+        "title": "Đi Săn Đêm",
+        "description": "Event placeholder",
+        "left_choice": "Option L",
+        "right_choice": "Option R",
+        "effects": {
+            "left": {
+                "anNinh": 0,
+                "kinhTe": 0,
+                "doanKet": 0,
+                "niemTin": 0
+            },
+            "right": {
+                "anNinh": 0,
+                "kinhTe": 0,
+                "doanKet": 0,
+                "niemTin": 0
+            }
+        }
+    },
+    {
+        "id": 48,
+        "title": "Dẫn Đường Đêm",
+        "description": "Event placeholder",
+        "left_choice": "Option L",
+        "right_choice": "Option R",
+        "effects": {
+            "left": {
+                "anNinh": 0,
+                "kinhTe": 0,
+                "doanKet": 0,
+                "niemTin": 0
+            },
+            "right": {
+                "anNinh": 0,
+                "kinhTe": 0,
+                "doanKet": 0,
+                "niemTin": 0
+            }
+        }
+    },
+    {
+        "id": 49,
+        "title": "Làm Ca Đêm",
+        "description": "Event placeholder",
+        "left_choice": "Option L",
+        "right_choice": "Option R",
+        "effects": {
+            "left": {
+                "anNinh": 0,
+                "kinhTe": 0,
+                "doanKet": 0,
+                "niemTin": 0
+            },
+            "right": {
+                "anNinh": 0,
+                "kinhTe": 0,
+                "doanKet": 0,
+                "niemTin": 0
+            }
+        }
+    },
+    {
+        "id": 50,
+        "title": "Lính Mời Nhậu",
+        "description": "Event placeholder",
+        "left_choice": "Option L",
+        "right_choice": "Option R",
+        "effects": {
+            "left": {
+                "anNinh": 0,
+                "kinhTe": 0,
+                "doanKet": 0,
+                "niemTin": 0
+            },
+            "right": {
+                "anNinh": 0,
+                "kinhTe": 0,
+                "doanKet": 0,
+                "niemTin": 0
+            }
+        }
+    },
+    {
+        "id": 51,
+        "title": "Cất Giấu Đồ",
+        "description": "Event placeholder",
+        "left_choice": "Option L",
+        "right_choice": "Option R",
+        "effects": {
+            "left": {
+                "anNinh": 0,
+                "kinhTe": 0,
+                "doanKet": 0,
+                "niemTin": 0
+            },
+            "right": {
+                "anNinh": 0,
+                "kinhTe": 0,
+                "doanKet": 0,
+                "niemTin": 0
+            }
+        }
+    },
+    {
+        "id": 52,
+        "title": "Chăm Người Bị Thương",
+        "description": "Event placeholder",
+        "left_choice": "Option L",
+        "right_choice": "Option R",
+        "effects": {
+            "left": {
+                "anNinh": 0,
+                "kinhTe": 0,
+                "doanKet": 0,
+                "niemTin": 0
+            },
+            "right": {
+                "anNinh": 0,
+                "kinhTe": 0,
+                "doanKet": 0,
+                "niemTin": 0
+            }
+        }
+    },
+    {
+        "id": 53,
+        "title": "Lính Khám Nhà",
+        "description": "Event placeholder",
+        "left_choice": "Option L",
+        "right_choice": "Option R",
+        "effects": {
+            "left": {
+                "anNinh": 0,
+                "kinhTe": 0,
+                "doanKet": 0,
+                "niemTin": 0
+            },
+            "right": {
+                "anNinh": 0,
+                "kinhTe": 0,
+                "doanKet": 0,
+                "niemTin": 0
+            }
+        }
+    },
+    {
+        "id": 54,
+        "title": "May Áo Tây",
+        "description": "Event placeholder",
+        "left_choice": "Option L",
+        "right_choice": "Option R",
+        "effects": {
+            "left": {
+                "anNinh": 0,
+                "kinhTe": 0,
+                "doanKet": 0,
+                "niemTin": 0
+            },
+            "right": {
+                "anNinh": 0,
+                "kinhTe": 0,
+                "doanKet": 0,
+                "niemTin": 0
+            }
+        }
+    },
+    {
+        "id": 55,
+        "title": "Chợ Đầu Mối",
+        "description": "Event placeholder",
+        "left_choice": "Option L",
+        "right_choice": "Option R",
+        "effects": {
+            "left": {
+                "anNinh": 0,
+                "kinhTe": 0,
+                "doanKet": 0,
+                "niemTin": 0
+            },
+            "right": {
+                "anNinh": 0,
+                "kinhTe": 0,
+                "doanKet": 0,
+                "niemTin": 0
+            }
+        }
+    },
+    {
+        "id": 56,
+        "title": "Cúng Gia Tiên",
+        "description": "Event placeholder",
+        "left_choice": "Option L",
+        "right_choice": "Option R",
+        "effects": {
+            "left": {
+                "anNinh": 0,
+                "kinhTe": 0,
+                "doanKet": 0,
+                "niemTin": 0
+            },
+            "right": {
+                "anNinh": 0,
+                "kinhTe": 0,
+                "doanKet": 0,
+                "niemTin": 0
+            }
+        }
+    },
+    {
+        "id": 57,
+        "title": "Nói Xấu",
+        "description": "Event placeholder",
+        "left_choice": "Option L",
+        "right_choice": "Option R",
+        "effects": {
+            "left": {
+                "anNinh": 0,
+                "kinhTe": 0,
+                "doanKet": 0,
+                "niemTin": 0
+            },
+            "right": {
+                "anNinh": 0,
+                "kinhTe": 0,
+                "doanKet": 0,
+                "niemTin": 0
+            }
+        }
+    },
+    {
+        "id": 58,
+        "title": "Giấu Tem Phiếu",
+        "description": "Event placeholder",
+        "left_choice": "Option L",
+        "right_choice": "Option R",
+        "effects": {
+            "left": {
+                "anNinh": 0,
+                "kinhTe": 0,
+                "doanKet": 0,
+                "niemTin": 0
+            },
+            "right": {
+                "anNinh": 0,
+                "kinhTe": 0,
+                "doanKet": 0,
+                "niemTin": 0
+            }
+        }
+    },
+    {
+        "id": 59,
+        "title": "Trao Đổi Vải",
+        "description": "Event placeholder",
+        "left_choice": "Option L",
+        "right_choice": "Option R",
+        "effects": {
+            "left": {
+                "anNinh": 0,
+                "kinhTe": 0,
+                "doanKet": 0,
+                "niemTin": 0
+            },
+            "right": {
+                "anNinh": 0,
+                "kinhTe": 0,
+                "doanKet": 0,
+                "niemTin": 0
+            }
+        }
+    },
+    {
+        "id": 60,
+        "title": "Bị Theo Dõi",
+        "description": "Event placeholder",
+        "left_choice": "Option L",
+        "right_choice": "Option R",
+        "effects": {
+            "left": {
+                "anNinh": 0,
+                "kinhTe": 0,
+                "doanKet": 0,
+                "niemTin": 0
+            },
+            "right": {
+                "anNinh": 0,
+                "kinhTe": 0,
+                "doanKet": 0,
+                "niemTin": 0
+            }
+        }
+    }
+]

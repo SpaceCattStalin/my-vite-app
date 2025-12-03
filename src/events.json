@@ -1,0 +1,242 @@
+[
+  {
+    "id": "e_1",
+    "title": "Tiếng Gõ Đêm Khuya",
+    "description": [
+      "Đêm khuya, tiếng gõ cửa vang lên nhẹ nhưng gấp.",
+      "Là bác hàng xóm. Bác xin trú nhờ vì lính tuần đang lùng bắt ngoài đường."
+    ],
+    "left_choice": "Option L",
+    "right_choice": "Option R",
+    "effects": {
+      "left": {
+        "anNinh": 0,
+        "kinhTe": 0,
+        "doanKet": 0,
+        "niemTin": 0
+      },
+      "right": {
+        "anNinh": 0,
+        "kinhTe": 0,
+        "doanKet": 0,
+        "niemTin": 0
+      }
+    }
+  },
+  {
+    "id": "e_2",
+    "title": "Mẩu Giấy Bí Ẩn",
+    "description": [
+      "Sáng hôm sau, bạn thấy một mẩu giấy lạ nằm dưới gầm cửa.",
+      "Chỉ vài ký hiệu nguệch ngoạc… hay là tín hiệu của ai đó?"
+    ],
+    "left_choice": "Option L",
+    "right_choice": "Option R",
+    "effects": {
+      "left": {
+        "anNinh": 0,
+        "kinhTe": 0,
+        "doanKet": 0,
+        "niemTin": 0
+      },
+      "right": {
+        "anNinh": 0,
+        "kinhTe": 0,
+        "doanKet": 0,
+        "niemTin": 0
+      }
+    }
+  },
+  {
+    "id": "e_3",
+    "title": [
+      "Hai lính tuần ghé nhà, hỏi tối qua có ai lạ ra vào không.",
+      "Ánh mắt họ soi từng góc nhà, vẻ đầy nghi ngờ."
+    ],
+    "description": "Event placeholder",
+    "left_choice": "Option L",
+    "right_choice": "Option R",
+    "effects": {
+      "left": {
+        "anNinh": 0,
+        "kinhTe": 0,
+        "doanKet": 0,
+        "niemTin": 0
+      },
+      "right": {
+        "anNinh": 0,
+        "kinhTe": 0,
+        "doanKet": 0,
+        "niemTin": 0
+      }
+    }
+  },
+  {
+    "id": "e_4",
+    "title": "Dấu Chân Sau Vườn",
+    "description": [
+      "Sau vườn có dấu chân lạ. Đêm qua chắc có người quanh đây.",
+      "Là người chạy trốn… hay kẻ theo dõi gia đình bạn?"
+    ],
+    "left_choice": "Option L",
+    "right_choice": "Option R",
+    "effects": {
+      "left": {
+        "anNinh": 0,
+        "kinhTe": 0,
+        "doanKet": 0,
+        "niemTin": 0
+      },
+      "right": {
+        "anNinh": 0,
+        "kinhTe": 0,
+        "doanKet": 0,
+        "niemTin": 0
+      }
+    }
+  },
+  {
+    "id": "e_5",
+    "title": "Tin Đồn Về Bác Hàng Xóm",
+    "description": [
+      "Trong làng rộ lên tin đồn: bác hàng xóm có liên quan đến phong trào yêu nước.",
+      "Một số người nói bác là chỉ điểm. Người khác bảo bác là người tốt."
+    ],
+    "left_choice": "Option L",
+    "right_choice": "Option R",
+    "effects": {
+      "left": {
+        "anNinh": 0,
+        "kinhTe": 0,
+        "doanKet": 0,
+        "niemTin": 0
+      },
+      "right": {
+        "anNinh": 0,
+        "kinhTe": 0,
+        "doanKet": 0,
+        "niemTin": 0
+      }
+    }
+  },
+  {
+    "id": 6,
+    "title": "Lời Mời Làm Việc Nhà Giàu",
+    "description": [
+      "Một gia đình giàu trong làng mời bạn làm việc lặt vặt.",
+      "Lương khá… nhưng họ nổi tiếng thân lính Pháp."
+    ],
+    "left_choice": "Option L",
+    "right_choice": "Option R",
+    "effects": {
+      "left": {
+        "anNinh": 0,
+        "kinhTe": 0,
+        "doanKet": 0,
+        "niemTin": 0
+      },
+      "right": {
+        "anNinh": 0,
+        "kinhTe": 0,
+        "doanKet": 0,
+        "niemTin": 0
+      }
+    }
+  },
+  {
+    "id": 7,
+    "title": "Tư Sản Đề Nghị Bán Rẻ Lúa",
+    "description": [
+      "Một tay tư sản muốn mua lúa nhà bạn với giá thấp bất thường.",
+      "Ông ta nói đây là “giúp đỡ”. Nhưng ánh mắt lại không giống vậy."
+    ],
+    "left_choice": "Option L",
+    "right_choice": "Option R",
+    "effects": {
+      "left": {
+        "anNinh": 0,
+        "kinhTe": 0,
+        "doanKet": 0,
+        "niemTin": 0
+      },
+      "right": {
+        "anNinh": 0,
+        "kinhTe": 0,
+        "doanKet": 0,
+        "niemTin": 0
+      }
+    }
+  },
+  {
+    "id": 8,
+    "title": "Cho Vay Nặng Lãi",
+    "description": [
+      "Một người lạ đề nghị cho gia đình bạn vay tiền nhanh.",
+      "Lãi suất thì… cao đến mức đáng sợ."
+    ],
+    "left_choice": "Option L",
+    "right_choice": "Option R",
+    "effects": {
+      "left": {
+        "anNinh": 0,
+        "kinhTe": 0,
+        "doanKet": 0,
+        "niemTin": 0
+      },
+      "right": {
+        "anNinh": 0,
+        "kinhTe": 0,
+        "doanKet": 0,
+        "niemTin": 0
+      }
+    }
+  },
+  {
+    "id": 9,
+    "title": "Hối Lộ Nhẹ",
+    "description": [
+      "Một lính tuần kín đáo gợi ý: đưa ít quà bánh thì sẽ ‘bỏ qua’ kiểm tra nhà.",
+      "Gia đình bạn đang bị họ để ý nhiều hơn."
+    ],
+    "left_choice": "Option L",
+    "right_choice": "Option R",
+    "effects": {
+      "left": {
+        "anNinh": 0,
+        "kinhTe": 0,
+        "doanKet": 0,
+        "niemTin": 0
+      },
+      "right": {
+        "anNinh": 0,
+        "kinhTe": 0,
+        "doanKet": 0,
+        "niemTin": 0
+      }
+    }
+  },
+  {
+    "id": 10,
+    "title": "Đầu Tư Mạo Hiểm",
+    "description": [
+      "Có người rủ bạn góp vốn vào một chuyến buôn lậu muối.",
+      "Nếu lời thì kinh tế gia đình khá lên, nếu lỗ thì trắng tay."
+    ],
+    "left_choice": "Option L",
+    "right_choice": "Option R",
+    "effects": {
+      "left": {
+        "anNinh": 0,
+        "kinhTe": 0,
+        "doanKet": 0,
+        "niemTin": 0
+      },
+      "right": {
+        "anNinh": 0,
+        "kinhTe": 0,
+        "doanKet": 0,
+        "niemTin": 0
+      }
+    }
+  }
+]
