@@ -1,19 +1,14 @@
-import { use, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { useGameState } from "../game/store";
 import Card from "../component/EventCard";
-// import KinhTeIcon from "../assests/rice.svg?react";
-import KinhTeIcon from "../assets/rice.svg?react";
-
-import DoanKetIcon from "../assets/hand.svg?react";
-import AnNinhIcon from "../assets/shield.svg?react";
-import NiemTinIcon from "../assets/star.svg?react";
-import IconInd from "../component/IconIndicator";
 import SvgFillMask from "../component/SvgFillMask";
 
 import rice from "../assets/rice.svg?url";
 import hand from "../assets/hand.svg?url";
 import shield from "../assets/shield.svg?url";
 import star from "../assets/star.svg?url";
+import IconIndicator from "../component/IconIndicator";
+import type { Choice, EventNode } from '../game/type';
 
 const ICON_PATHS: Record<string, string> = {
     kinhTe: rice,
@@ -22,44 +17,99 @@ const ICON_PATHS: Record<string, string> = {
     niemTin: star,
 };
 
-const Welcome = () => {
-    const { currentNode, applyChoice, stats, list } = useGameState();
+type Props = {
+    setStage: (stage: "menu" | "select" | "game") => void;
+};
+
+const Welcome = ({ setStage }: Props) => {
+    const { currentNode, applyChoice, stats, list, role, gameEnd, resetGame } = useGameState();
     const [boundaryVisible, setBoundaryVisible] = useState(false);
     const [boundaryValue, setBoundaryValue] = useState(180);
+    const [currentEvent, setCurrentEvent] = useState<EventNode | null>(null);
+    const [showDrawer, setShowDrawer] = useState(false);
 
-    const IconIndicator = IconInd as React.FC<React.SVGProps<SVGSVGElement>>;
+    useEffect(() => {
+        if (gameEnd) {
+            setShowDrawer(true);
+        }
+    }, [gameEnd]);
+
+    //const IconIndicator = IconInd as React.FC<React.SVGProps<SVGSVGElement>>;
+    const [previewStats, setPreviewStats] = useState<Record<string, number> | null>(null);
 
     if (!currentNode) return <div>Kết thúc game</div>;
 
     return (
         <main className="flex items-center justify-center h-full">
-            <div className='flex-1 flex flex-col items-center gap-6 min-h-0 bg-[#BDA867] h-full pb-2'>
-                <header className='flex flex-col items-center gap-9 w-full h-30 bg-[#231402]'>
-                    <div className='flex w-full h-full items-center justify-evenly mb-1.5 bg-[#231402]'>
+            <div className='flex-1 flex flex-col items-center gap-1 bg-[#BDA867] h-full pb-2'>
+
+                {showDrawer && (
+                    <div
+                        className={`fixed bottom-6 right-6 
+                        bg-[#231402] text-white 
+                        px-5 py-5 rounded-xl shadow-2xl 
+                        flex flex-col gap-3 z-50
+                        transition-transform duration-500 ease-out
+                        ${showDrawer ? "translate-x-0 opacity-100" : "translate-x-[150%] opacity-0"}
+                    `}>
+                        <div className="text-lg font-semibold">Trò chơi kết thúc</div>
+
+                        <button
+                            onClick={() => {
+                                resetGame();
+                                setShowDrawer(false);
+                            }}
+                            className="button-50 px-6 py-2 bg-[#D8B65A] text-black font-semibold rounded-md"
+                        >
+                            Chơi lại
+                        </button>
+
+                        <button
+                            onClick={() => {
+                                window.location.reload();
+                            }}
+                            className="button-50 px-6 py-2 bg-white text-black rounded-md"
+                        >
+                            Về Menu
+                        </button>
+                    </div>
+                )}
+
+                <header className='
+                flex flex-col items-center gap-9 w-full bg-[#231402]
+                '>
+                    <div className="flex flex-wrap gap-36 w-full justify-center py-2 bg-[#231402]">
                         {Object.entries(stats).map(([key, value]) => {
                             const iconPath = ICON_PATHS[key];
+                            const previewValue = previewStats?.[key] ?? 0;
+                            const finalValue = previewStats ? previewValue : value;
                             return (
-                                <div key={key} className="flex flex-col items-center px-2 mt-4">
+                                <div key={key} className="flex items-center px-2 mt-4">
 
                                     <SvgFillMask
                                         icon={iconPath}
                                         percent={(value / 10) * 100}
                                         baseColor="#3A2704"
                                         fillColor="#D8B65A"
-                                        size={60}
+                                        size={40}
                                     />
 
+                                    <IconIndicator value={finalValue} />
                                 </div>
                             );
                         })}
 
                     </div>
                 </header>
-                <h1 className="">{currentNode.text}</h1>
-                <div className='w-[450px] h-full flex flex-col flex-1'>
-                    {/* <div className='flex-1 bg-red-300'> */}
-                    {boundaryVisible && (
-                        <div className="absolute inset-0 top-30 pointer-events-none">
+
+                <h1 className="text-md sm:text-2xl font-medium text-[#231402] text-center px-4">
+                    {currentNode.text}
+                </h1>
+
+                {/* <div className='w-full max-w-[500px] h-full flex flex-col flex-1'> */}
+                <div className='w-full max-w-[500px] px-4 h-full flex flex-col flex-1 items-center'>
+                    {/* {boundaryVisible && (
+                        <div className="absolute inset-0 top-18 pointer-events-none">
                             <div
                                 className="absolute top-0 bottom-0 w-[2px] bg-gray-700"
                                 style={{ left: `calc(50% - ${boundaryValue}px)` }}
@@ -69,7 +119,7 @@ const Welcome = () => {
                                 className="absolute top-0 bottom-0 w-[2px] bg-gray-700"
                                 style={{ left: `calc(50% + ${boundaryValue}px)` }}
                             />
-
+                            
                             <div
                                 className="absolute top-0 bottom-0 bg-gray-700/20"
                                 style={{
@@ -81,12 +131,12 @@ const Welcome = () => {
                             <div
                                 className="absolute top-0 bottom-0 bg-gray-700/20"
                                 style={{
-                                    left: `calc(73% - ${boundaryValue}px)`,
+                                    left: `calc(70% - ${boundaryValue}px)`,
                                     right: 0
                                 }}
                             />
                         </div>
-                    )}
+                    )} */}
 
                     <Card
                         image={currentNode.image as string}
@@ -96,21 +146,19 @@ const Welcome = () => {
                         // rightText={currentNode.right.text}
                         onChooseLeftAnswer={(choice) => applyChoice(choice)}
                         onChooseRightAnswer={(choice) => applyChoice(choice)}
-                        isHoldingCallback={(isHolding: boolean, threshold: number) => {
+                        isHoldingCallback={(isHolding: boolean, threshold: number, currentEvent: EventNode) => {
                             setBoundaryVisible(isHolding);
                             setBoundaryValue(threshold);
+                            setCurrentEvent(currentEvent);
                         }}
-                    />
-                    {/* </div> */}
-                    {/* <div className='flex w-full flex-0 h-[450px] justify-between'>
-                        <button onClick={() => applyChoice(currentNode.left)}>
-                            {currentNode.left.text}
-                        </button>
+                        setCurrentlySelectedChoice={function (choice: Choice): void {
+                            if (!choice) return;
 
-                        <button onClick={() => applyChoice(currentNode.right)}>
-                            {currentNode.right.text}
-                        </button>
-                    </div> */}
+                            const { effects } = choice;
+                            if (effects) {
+                                setPreviewStats(effects);
+                            }
+                        }} />
                 </div>
             </div >
         </main >

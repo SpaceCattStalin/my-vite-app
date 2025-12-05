@@ -13,7 +13,6 @@ export default function SvgFillMask({
     fillColor,
     size = 60
 }: SvgFillMaskProps) {
-    console.log(icon);
     return (
         <div
             style={{
@@ -27,7 +26,7 @@ export default function SvgFillMask({
                 backgroundColor: baseColor,
             }}
         >
-            <div
+            {/* <div
                 style={{
                     position: "absolute",
                     bottom: 0,
@@ -36,7 +35,19 @@ export default function SvgFillMask({
                     height: `${percent}%`,
                     backgroundColor: fillColor,
                 }}
-            />
+            /> */}
+            {percent > 0 && (
+                <div
+                    style={{
+                        position: "absolute",
+                        bottom: 0,
+                        left: 0,
+                        width: "100%",
+                        height: `${percent}%`,
+                        backgroundColor: fillColor,
+                    }}
+                />
+            )}
         </div>
     );
 }

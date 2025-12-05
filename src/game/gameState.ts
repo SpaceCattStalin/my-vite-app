@@ -5,12 +5,17 @@ export class GameState {
     currentNode: EventNode | null = null;
     list: EventLinkedList;
     seen: Set<string>;
+    role: "father" | "mother" | "any" = "any";
+    setRole: (role: "father" | "mother") => void;
+    resetGame: () => void;
     stats: {
         kinhTe: number;
         doanKet: number;
         anNinh: number;
         niemTin: number;
     };
+    gameEnd: boolean;
+    eventCount: number;
 
     constructor(startNode: EventNode, list: EventLinkedList) {
         this.currentNode = startNode;
@@ -22,12 +27,31 @@ export class GameState {
         };
         this.list = list;
         this.seen = new Set<string>();
+        this.setRole = (role) => {
+            this.role = role;
+        };
+        this.gameEnd = false;
+        this.eventCount = 0;
+        this.resetGame = () => {
+            this.currentNode = this.list.head;
+            this.stats = {
+                kinhTe: 5,
+                doanKet: 5,
+                anNinh: 5,
+                niemTin: 5
+            };
+            this.eventCount = 0;
+            this.role = "any";
+            this.gameEnd = false;
+            this.seen = new Set<string>();
+        };
+
     }
 
     addSeen(currentNode: EventNode) {
         this.seen.add(currentNode.id);
     }
-    
+
     applyChoice(choice: Choice) {
         for (const key in choice.effects) {
             if (key in this.stats) {

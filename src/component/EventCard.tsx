@@ -10,21 +10,23 @@ type CardProps = {
     backgroundColor: string,
     onChooseLeftAnswer: (choice: Choice) => void,
     onChooseRightAnswer: (choice: Choice) => void;
-    isHoldingCallback: (state: boolean, threshold: number) => void;
+    isHoldingCallback: (state: boolean, threshold: number, currentEvent: EventNode) => void;
     threshold?: number;
+    setCurrentlySelectedChoice: (choice: Choice) => void;
 };
 
 export default function Card({
-    // leftText,
-    // rightText,
     currentEvent,
     image,
     backgroundColor,
     onChooseLeftAnswer,
     onChooseRightAnswer,
-    isHoldingCallback
+    isHoldingCallback,
+    setCurrentlySelectedChoice
 }: CardProps) {
     const cardRef = useRef<HTMLDivElement>(null);
+    const lastPreviewRef = useRef<"left" | "right" | null>(null);
+    const currentNodeRef = useRef<EventNode | null>(null);
     //const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
     const x = useMotionValue(0);
@@ -38,14 +40,32 @@ export default function Card({
     const rotate = useTransform(animatedX, [-150, 150], [-10, 10]);
     const opacityLeft = useTransform(animatedX, [-110, -50], [1, 0]);
     const opacityRight = useTransform(animatedX, [10, 150], [0, 1]);
-    //const DELAY = 150;
-    const THRESHOLD = 190;
+
+    const [threshold, setThreshold] = useState(160);
+
+    // useEffect(() => {
+    //     const updateThreshold = () => {
+    //         const vw = window.innerWidth;
+    //         setThreshold(vw < 768 ? vw * 0.25 : 190);
+    //     };
+
+    //     updateThreshold();
+    //     window.addEventListener('resize', updateThreshold);
+    //     return () => window.removeEventListener('resize', updateThreshold);
+    // }, []);
+
+    const THRESHOLD = threshold;
 
     const [isHolding, setIsHolding] = useState(false);
 
+    // useEffect(() => {
+    //     x.set(0);
+    //     lastPreviewRef.current = null;
+    // }, [currentEvent]);
+
 
     useEffect(() => {
-        isHoldingCallback(isHolding, THRESHOLD);
+        isHoldingCallback(isHolding, THRESHOLD, currentEvent);
     }, [isHolding]);
 
     const handlePointerDown = () => {
@@ -60,22 +80,44 @@ export default function Card({
 
         const delta = e.clientX - centerX;
 
-        // x.set(delta);
         animate(x, delta, {
             type: "spring",
             stiffness: 300,
             damping: 30
         });
-        // if (timeoutRef.current) return;
+
+        if (delta > 10 && lastPreviewRef.current !== "right") {
+            lastPreviewRef.current = "right";
+            setCurrentlySelectedChoice(currentEvent.right);
+        }
+        else if (delta < -10 && lastPreviewRef.current !== "left") {
+            lastPreviewRef.current = "left";
+            setCurrentlySelectedChoice(currentEvent.left);
+        }
+        else if (Math.abs(delta) <= 10 && lastPreviewRef.current !== null) {
+            lastPreviewRef.current = null;
+            setCurrentlySelectedChoice(null as any);
+        }
 
         if (delta > THRESHOLD) {
             setIsHolding(false);
             onChooseRightAnswer(currentEvent.right);
-            //timeoutRef.current = null;
+
+            animate(x, window.innerWidth * 1.2, {
+                type: "tween",
+                duration: 1,
+                ease: "easeOut",
+                onComplete: () => x.set(0)
+            });
         } else if (delta < -THRESHOLD) {
             setIsHolding(false);
             onChooseLeftAnswer(currentEvent.left);
-            //timeoutRef.current = null;
+            animate(x, -window.innerWidth * 1.2, {
+                type: "tween",
+                duration: 1,
+                ease: "easeOut",
+                onComplete: () => x.set(0)
+            });
         }
     };
 
@@ -86,19 +128,16 @@ export default function Card({
             stiffness: 300,
             damping: 30
         });
-        // if (timeoutRef.current) {
-        //     clearTimeout(timeoutRef.current);
-        //     timeoutRef.current = null;
-        // }
     };
 
     return (
         <motion.div
             ref={cardRef}
             style={{
-                width: 400,
-                height: 400,
-                borderRadius: 35,
+                width: "330px",
+                height: "330px",
+                //aspectRatio: "1",
+                borderRadius: "clamp(20px, 5vw, 35px)",
                 position: "relative",
                 backgroundColor,
                 overflow: "hidden",
@@ -123,10 +162,12 @@ export default function Card({
                     background: "rgba(0,0,0,0.4)",
                     padding: 10,
                     borderRadius: 8,
+                    fontSize: "clamp(12px, 3vw, 16px)",
+                    maxWidth: "40%",
                 }}
             >
                 {/* {leftText} */}
-                {currentEvent.left.text}
+                {currentEvent.left?.text}
             </motion.div>
 
             <motion.div
@@ -139,10 +180,12 @@ export default function Card({
                     background: "rgba(0,0,0,0.4)",
                     padding: 10,
                     borderRadius: 8,
+                    fontSize: "clamp(12px, 3vw, 16px)",
+                    maxWidth: "40%",
                 }}
             >
                 {/* {rightText} */}
-                {currentEvent.right.text}
+                {currentEvent.right?.text}
             </motion.div>
 
             <img
