@@ -1,12 +1,12 @@
 import { EventLinkedList } from './linkedList';
 import { events } from './events';
+import data from '../events.json';
 
 const linkedList = new EventLinkedList();
 
-for (const event of events) {
+for (const event of data) {
     linkedList.add(event);
 }
 
-linkedList.connectNext('1911_01', '1911_02A')
 
 export default linkedList;

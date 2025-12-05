@@ -4,11 +4,10 @@ import { type Choice, type EventNode } from "./type";
 export class GameState {
     currentNode: EventNode | null = null;
     list: EventLinkedList;
-    
+    seen: Set<string>;
     stats: {
         kinhTe: number;
         doanKet: number;
-        sucKhoe: number;
         anNinh: number;
         niemTin: number;
     };
@@ -20,11 +19,15 @@ export class GameState {
             anNinh: 0,
             kinhTe: 0,
             niemTin: 0,
-            sucKhoe: 0
-        }
-        this.list = list
+        };
+        this.list = list;
+        this.seen = new Set<string>();
     }
 
+    addSeen(currentNode: EventNode) {
+        this.seen.add(currentNode.id);
+    }
+    
     applyChoice(choice: Choice) {
         for (const key in choice.effects) {
             if (key in this.stats) {
@@ -32,12 +35,12 @@ export class GameState {
             }
         }
 
-        if (choice.jumpTo) {
-
+        if (this.currentNode?.id == 'e-16') {
+            // choice.jumpTo('es-1');
         } else if (this.currentNode?.next) {
             this.currentNode = this.currentNode.next;
         } else {
-            this.currentNode = null
+            this.currentNode = null;
         }
     }
 }
