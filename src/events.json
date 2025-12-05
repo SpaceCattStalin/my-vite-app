@@ -6,7 +6,7 @@
       "Đêm khuya, tiếng gõ cửa vang lên nhẹ nhưng gấp.",
       " Là bác hàng xóm. Bác xin trú nhờ vì lính tuần đang lùng bắt ngoài đường."
     ],
-    "image": "../public/assests/e1.png",
+    "image": "../public/assets/e1.png",
     "role": "any",
 
     "left": {
@@ -37,7 +37,7 @@
       "Sáng hôm sau, bạn thấy một mẩu giấy lạ nằm dưới gầm cửa.",
       " Chỉ vài ký hiệu nguệch ngoạc… hay là tín hiệu của ai đó?"
     ],
-    "image": "../public/assests/sec.png",
+    "image": "../public/assets/sec.png",
     "role": "any",
     "left": {
       "text": "Giữ lại và tìm hiểu",
@@ -67,7 +67,7 @@
       "Lính tuần ghé nhà, hỏi tối qua có ai lạ ra vào không.",
       " Ánh mắt họ soi từng góc nhà, vẻ đầy nghi ngờ."
     ],
-    "image": "../public/assests/e17.png",
+    "image": "../public/assets/e17.png",
     "role": "any",
     "left": {
       "text": "Khai là không thấy ai cả",
@@ -96,7 +96,7 @@
       "Sau vườn có dấu chân lạ. Đêm qua chắc có người quanh đây.",
       " Là người chạy trốn… hay kẻ theo dõi gia đình bạn?"
     ],
-    "image": "../public/assests/shoe.png",
+    "image": "../public/assets/shoe.png",
     "left": {
       "text": "Đi theo dấu chân để điều tra",
       "effects": {
@@ -126,7 +126,7 @@
       "Trong làng rộ lên tin đồn: bác hàng xóm có liên quan đến phong trào yêu nước.",
       " Một số người nói bác là chỉ điểm. Người khác bảo bác là người tốt."
     ],
-    "image": "../public/assests/e5.png",
+    "image": "../public/assets/e5.png",
     "left": {
       "text": "Tin bác là người tốt",
       "effects": {
@@ -156,7 +156,7 @@
       "Một gia đình giàu trong làng mời bạn làm việc lặt vặt.",
       " Lương khá… nhưng họ nổi tiếng thân lính Pháp."
     ],
-    "image": "../public/assests/e6.png",
+    "image": "../public/assets/e6.png",
     "left": {
       "text": "Nhận việc để kiếm thêm tiền",
       "effects": {
@@ -186,7 +186,7 @@
       "Một tay tư sản muốn mua lúa nhà bạn với giá thấp bất thường.",
       " Ông ta nói đây là “giúp đỡ”. Nhưng ánh mắt lại không giống vậy."
     ],
-    "image": "../public/assests/e7.png",
+    "image": "../public/assets/e7.png",
     "role": "any",
     "left": {
       "text": "Bán cho ông ta cho xong việc",
@@ -216,7 +216,7 @@
       "Một người lạ đề nghị cho gia đình bạn vay tiền nhanh.",
       " Lãi suất thì… cao đến mức đáng sợ."
     ],
-    "image": "../public/assests/e7.png",
+    "image": "../public/assets/e7.png",
     "role": "any",
     "left": {
       "text": "Nhận tiền vay dù lãi cao",
@@ -246,7 +246,7 @@
       "Một lính tuần kín đáo gợi ý: đưa ít quà bánh thì sẽ ‘bỏ qua’ kiểm tra nhà.",
       " Gia đình bạn đang bị họ để ý nhiều hơn."
     ],
-    "image": "../public/assests/e9.png",
+    "image": "../public/assets/e9.png",
     "role": "any",
     "left": {
       "text": "Đưa chút quà để mọi chuyện yên ổn",
@@ -276,7 +276,7 @@
       "Có người rủ bạn góp vốn vào một chuyến buôn lậu muối.",
       " Nếu lời thì kinh tế gia đình khá lên, nếu lỗ thì trắng tay."
     ],
-    "image": "../public/assests/e10.png",
+    "image": "../public/assets/e10.png",
     "role": "any",
     "left": {
       "text": "Tham gia chuyến buôn lậu muối",
@@ -305,7 +305,7 @@
       "Mưa nắng thất thường khiến vụ mùa năm nay thất thu.",
       " Gia đình bạn đang thiếu lúa trầm trọng."
     ],
-    "image": "../public/assests/e11.png",
+    "image": "../public/assets/e11.png",
     "role": "any",
     "left": {
       "text": "Bán gia súc để bù lỗ",
@@ -326,7 +326,7 @@
       "Giá lúa tăng. Một lái buôn đề nghị đổi vàng lấy lúa.",
       " Lượng vàng của gia đình không còn nhiều."
     ],
-    "image": "../public/assests/e12.png",
+    "image": "../public/assets/e12.png",
     "left": {
       "text": "Đổi phần lớn vàng",
       "effects": { "anNinh": 0, "kinhTe": -3, "doanKet": 0, "niemTin": 0 }
@@ -346,7 +346,7 @@
       "Con trai nói muốn nghỉ học để phụ gia đình kiếm tiền.",
       " Việc này có thể thay đổi tương lai của ảnh."
     ],
-    "image": "../public/assests/son.png",
+    "image": "../public/assets/son.png",
     "left": {
       "text": "Để con nghỉ học",
       "effects": { "anNinh": 0, "kinhTe": 2, "doanKet": -1, "niemTin": -1 }
@@ -366,7 +366,7 @@
       " Học phí khá cao, nhưng có lợi về lâu dài."
     ],
     "role": "any",
-    "image": "../public/assests/daughter.png",
+    "image": "../public/assets/daughter.png",
     "left": {
       "text": "Cho đi học",
       "effects": { "anNinh": -1, "kinhTe": -2, "doanKet": 2, "niemTin": 2 }
@@ -386,7 +386,7 @@
       " Bạn phải đưa ra hướng đối phó."
     ],
     "role": "any",
-    "image": "../public/assests/market.png",
+    "image": "../public/assets/market.png",
     "left": {
       "text": "Đóng thêm thuế",
       "effects": { "anNinh": 1, "kinhTe": -2, "doanKet": 1, "niemTin": 0 }
@@ -406,7 +406,7 @@
       " Người nào thiếu mặt sẽ bị coi là bất trung."
     ],
     "role": "any",
-    "image": "../public/assests/e16.png",
+    "image": "../public/assets/e16.png",
     "left": {
       "text": "Tham gia đầy đủ",
       "effects": { "anNinh": 2, "kinhTe": -1, "doanKet": 1, "niemTin": 1 }
@@ -426,7 +426,7 @@
       " Họ nhìn bạn với ánh mắt dò xét."
     ],
     "role": "any",
-    "image": "../public/assests/e17.png",
+    "image": "../public/assets/e17.png",
     "left": {
       "text": "Hợp tác",
       "effects": { "anNinh": 2, "kinhTe": 0, "doanKet": -1, "niemTin": -1 }
@@ -446,7 +446,7 @@
       " Không ai biết thực hư, nhưng không khí rất căng thẳng."
     ],
     "role": "any",
-    "image": "../public/assests/e18.png",
+    "image": "../public/assets/e18.png",
     "left": {
       "text": "Đứng về phía người bị tố",
       "effects": { "anNinh": -1, "kinhTe": 0, "doanKet": 2, "niemTin": 1 }
@@ -466,7 +466,7 @@
       " Gia đình nên chuẩn bị tâm lý."
     ],
     "role": "any",
-    "image": "../public/assests/e19.png",
+    "image": "../public/assets/e19.png",
     "left": {
       "text": "Giấu đồ đạc khả nghi",
       "effects": { "anNinh": -1, "kinhTe": 0, "doanKet": 1, "niemTin": 1 }
@@ -486,7 +486,7 @@
       " Không rõ là người tốt hay kẻ theo dõi."
     ],
     "role": "any",
-    "image": "../public/assests/stranger.png",
+    "image": "../public/assets/stranger.png",
     "left": {
       "text": "Cho nước & nghỉ chân",
       "effects": { "anNinh": -2, "kinhTe": -1, "doanKet": 2, "niemTin": 1 }
@@ -505,7 +505,7 @@
       " Nhưng tham gia nghĩa là phải đóng góp một phần lương thực."
     ],
     "role": "mother",
-    "image": "../public/assests/father.png",
+    "image": "../public/assets/father.png",
     "left": {
       "text": "Đồng ý cho chồng tham gia",
       "effects": { "anNinh": -1, "kinhTe": -1, "doanKet": 2, "niemTin": 2 }
@@ -525,7 +525,7 @@
       "Phong trào lập hợp tác xã dệt vải đang lan rộng.",
       " Vợ bạn được mời tham gia buổi đầu tiên."
     ],
-    "image": "../public/assests/mother.png",
+    "image": "../public/assets/mother.png",
     "left": {
       "text": "Để vợ tham gia HTX",
       "effects": { "anNinh": 0, "kinhTe": 2, "doanKet": 1, "niemTin": 1 }
@@ -545,7 +545,7 @@
       "Con trai muốn tham gia lớp võ do thanh niên làng tổ chức.",
       " Nó nói muốn sau này bảo vệ gia đình."
     ],
-    "image": "../public/assests/son.png",
+    "image": "../public/assets/son.png",
     "left": {
       "text": "Cho tham gia lớp võ",
       "effects": { "anNinh": 2, "kinhTe": -1, "doanKet": 1, "niemTin": 1 }
@@ -565,7 +565,7 @@
       "Con gái háo hức muốn tham gia đoàn thiếu nhi mới thành lập.",
       " Nhưng điều này nghĩa là mất thêm thời gian phụ việc nhà."
     ],
-    "image": "../public/assests/daughter.png",
+    "image": "../public/assets/daughter.png",
     "left": {
       "text": "Cho tham gia đoàn",
       "effects": { "anNinh": 0, "kinhTe": -1, "doanKet": 2, "niemTin": 1 }
@@ -585,7 +585,7 @@
       "Xã yêu cầu cha tham gia làm đường liên thôn.",
       " Việc nặng và tốn nhiều ngày công."
     ],
-    "image": "../public/assests/father.png",
+    "image": "../public/assets/father.png",
     "left": {
       "text": "Để chồng đi làm nghĩa vụ",
       "effects": { "anNinh": 1, "kinhTe": -2, "doanKet": 2, "niemTin": 1 }
@@ -605,7 +605,7 @@
       "Vợ được mời hỗ trợ buổi tuyên truyền về bình đẳng giới.",
       " Một số người trong làng không thích điều này."
     ],
-    "image": "../public/assests/mother.png",
+    "image": "../public/assets/mother.png",
     "left": {
       "text": "Để vợ tham gia",
       "effects": { "anNinh": -1, "kinhTe": 0, "doanKet": 1, "niemTin": 2 }
@@ -625,7 +625,7 @@
       "Con trai bị mấy anh thanh niên rủ vào đội tự vệ làng.",
       " Nguy hiểm nhưng có thể giúp ích."
     ],
-    "image": "../public/assests/son.png",
+    "image": "../public/assets/son.png",
     "left": {
       "text": "Để nó tham gia",
       "effects": { "anNinh": 3, "kinhTe": -1, "doanKet": -1, "niemTin": 2 }
@@ -645,7 +645,7 @@
       "Con gái nhận được lời mời học ở trường huyện.",
       " Nhưng đường đi xa và tốn nhiều chi phí."
     ],
-    "image": "../public/assests/daughter.png",
+    "image": "../public/assets/daughter.png",
     "left": {
       "text": "Cho em đi học huyện",
       "effects": { "anNinh": -1, "kinhTe": -2, "doanKet": 1, "niemTin": 2 }
@@ -665,7 +665,7 @@
       "Chồng nói mái nhà sắp dột. Cần sửa gấp.",
       " Nhưng kinh tế hiện giờ rất khó khăn."
     ],
-    "image": "../public/assests/father.png",
+    "image": "../public/assets/father.png",
     "left": {
       "text": "Dốc tiền sửa ngay",
       "effects": { "anNinh": 1, "kinhTe": -3, "doanKet": 1, "niemTin": 0 }
@@ -685,7 +685,7 @@
       "Xã mở chợ mới, vợ bạn muốn thuê sạp để bán hàng.",
       " Cơ hội kiếm tiền, nhưng rủi ro vì thuế cao."
     ],
-    "image": "../public/assests/mother.png",
+    "image": "../public/assets/mother.png",
     "left": {
       "text": "Cho vợ thuê sạp",
       "effects": { "anNinh": 0, "kinhTe": 2, "doanKet": 1, "niemTin": 1 }
@@ -705,7 +705,7 @@
       "Con trai bày tỏ muốn nhập ngũ theo tiếng gọi bảo vệ quê hương.",
       " Mẹ thì sợ nguy hiểm, cha thì tự hào."
     ],
-    "image": "../public/assests/son.png",
+    "image": "../public/assets/son.png",
     "left": {
       "text": "Đồng ý cho nhập ngũ",
       "effects": { "anNinh": 3, "kinhTe": -1, "doanKet": -2, "niemTin": 3 }
@@ -725,7 +725,7 @@
       "Con gái đột nhiên bị sốt cao.",
       " Thuốc men lúc này rất đắt và hiếm."
     ],
-    "image": "../public/assests/daughter.png",
+    "image": "../public/assets/daughter.png",
     "left": {
       "text": "Mua thuốc tốt",
       "effects": { "anNinh": 0, "kinhTe": -2, "doanKet": 2, "niemTin": 0 }
@@ -745,7 +745,7 @@
       "Chồng được xã đề xuất làm đội trưởng tự vệ.",
       " Một vị trí đầy trách nhiệm và nguy hiểm."
     ],
-    "image": "../public/assests/father.png",
+    "image": "../public/assets/father.png",
     "left": {
       "text": "Để cha nhận trách nhiệm",
       "effects": { "anNinh": 3, "kinhTe": -1, "doanKet": 1, "niemTin": 2 }
@@ -765,7 +765,7 @@
       "Gia đình họ hàng xa xin sang ở nhờ thời gian ngắn.",
       " Nhà bạn vốn đã không rộng."
     ],
-    "image": "../public/assests/e34.png",
+    "image": "../public/assets/e34.png",
     "left": {
       "text": "Cho họ ở",
       "effects": { "anNinh": -1, "kinhTe": -1, "doanKet": 3, "niemTin": 1 }
@@ -785,7 +785,7 @@
       " Người bạn đời của bạn cho rằng theo tập thể sẽ ổn định hơn.",
       " Còn bạn lại cân nhắc giữ đất làm ăn riêng để chủ động kinh tế."
     ],
-    "image": "../public/assests/house.png",
+    "image": "../public/assets/house.png",
     "left": {
       "text": "Theo tập thể hoá",
       "effects": { "anNinh": 1, "kinhTe": -1, "doanKet": 1, "niemTin": 2 }
@@ -804,7 +804,7 @@
       "Sự khó khăn về kinh tế đã dồn gia đình vào đường cùng.",
       " Trong thời kỳ xoá đói giảm nghèo, nhiều gia đình cũng rơi vào tình cảnh như vậy."
     ],
-    "image": "../public/assests/ed4.png",
+    "image": "../public/assets/ed4.png",
     "left": null,
     "right": null,
     "next": null
@@ -817,7 +817,7 @@
       "Gia đình bạn bị cuốn vào vòng xoáy bất ổn của thời cuộc.",
       " Khi an ninh không còn được đảm bảo, mọi nỗ lực giữ vững tổ ấm đều trở nên vô vọng."
     ],
-    "image": "../public/assests/ed1.png",
+    "image": "../public/assets/ed1.png",
     "left": null,
     "right": null,
     "next": null
@@ -830,7 +830,7 @@
       "Sự rạn nứt trong gia đình khiến tinh thần chung bị phá vỡ.",
       " Giữa biến động thời đại, một gia đình thiếu đoàn kết khó lòng vượt qua thử thách."
     ],
-    "image": "../public/assests/ed4.png",
+    "image": "../public/assets/ed4.png",
     "left": null,
     "right": null,
     "next": null
@@ -843,7 +843,7 @@
       "Niềm tin cạn kiệt khiến gia đình không thể tiến bước trong thời kỳ đổi thay.",
       " Tinh thần là chỗ dựa quan trọng nhất — và nó đã không còn."
     ],
-    "image": "../public/assests/ed4.png",
+    "image": "../public/assets/ed4.png",
     "left": null,
     "right": null,
     "next": null
@@ -853,7 +853,7 @@
     "role": "any",
     "title": "Hết thời gian",
     "text": "Gia đình bạn đã trải qua 20 sự kiện. Đây là kết thúc hành trình!",
-    "image": "../public/assests/ed.png",
+    "image": "../public/assets/ed.png",
     "left": null,
     "right": null,
     "next": null

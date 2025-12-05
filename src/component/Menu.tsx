@@ -7,7 +7,7 @@ export default function Menu({ onPlay }: MenuProps) {
          <div
             className="flex flex-col items-center justify-center h-screen bg-cover bg-center"
             style={{
-                backgroundImage: "url('../public/assests/bg.png')"
+                backgroundImage: "url('../public/assets/bg.png')"
             }}
         >
             <div className="backdrop-blur-sm bg-white/30 p-6 rounded-xl">
