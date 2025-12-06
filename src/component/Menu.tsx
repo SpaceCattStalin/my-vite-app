@@ -1,4 +1,3 @@
-import bg from "/assets/bg.png";
 
 type MenuProps = {
     onPlay: () => void;
@@ -11,7 +10,9 @@ export default function Menu({ onPlay }: MenuProps) {
             // style={{
             //     backgroundImage: "url('/assets/bg.png')"
             // }}
-            style={{ backgroundImage: `url(${bg})` }}
+            style={{
+                backgroundImage: "url('/bg.png')"
+            }}
         >
             <div className="backdrop-blur-sm bg-white/30 p-6 rounded-xl">
                 <h1 className="text-5xl font-bold text-[#231402] mb-10">
