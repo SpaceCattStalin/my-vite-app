@@ -26,7 +26,7 @@ export default function Card({
 }: CardProps) {
     const cardRef = useRef<HTMLDivElement>(null);
     const lastPreviewRef = useRef<"left" | "right" | null>(null);
-    const currentNodeRef = useRef<EventNode | null>(null);
+    //const currentNodeRef = useRef<EventNode | null>(null);
     //const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
     const x = useMotionValue(0);
@@ -43,16 +43,6 @@ export default function Card({
 
     const [threshold, setThreshold] = useState(160);
 
-    // useEffect(() => {
-    //     const updateThreshold = () => {
-    //         const vw = window.innerWidth;
-    //         setThreshold(vw < 768 ? vw * 0.25 : 190);
-    //     };
-
-    //     updateThreshold();
-    //     window.addEventListener('resize', updateThreshold);
-    //     return () => window.removeEventListener('resize', updateThreshold);
-    // }, []);
 
     const THRESHOLD = threshold;
 

@@ -17,6 +17,14 @@ const ICON_PATHS: Record<string, string> = {
     niemTin: star,
 };
 
+const ICON_TITLE: Record<string, string> = {
+    kinhTe: "Kinh tế",
+    doanKet: "Đoàn kết",
+    anNinh: "An ninh",
+    niemTin: "Niềm tin",
+};
+
+
 type Props = {
     setStage: (stage: "menu" | "select" | "game") => void;
 };
@@ -84,17 +92,24 @@ const Welcome = ({ setStage }: Props) => {
                             const previewValue = previewStats?.[key] ?? 0;
                             const finalValue = previewStats ? previewValue : value;
                             return (
-                                <div key={key} className="flex items-center px-2 mt-4">
+                                <div key={key} className="flex flex-col items-center">
+                                    <div className="flex items-center px-2 mt-4">
 
-                                    <SvgFillMask
-                                        icon={iconPath}
-                                        percent={(value / 10) * 100}
-                                        baseColor="#3A2704"
-                                        fillColor="#D8B65A"
-                                        size={40}
-                                    />
+                                        <SvgFillMask
+                                            icon={iconPath}
+                                            percent={(value / 10) * 100}
+                                            baseColor="#3A2704"
+                                            fillColor="#D8B65A"
+                                            size={40}
+                                        />
 
-                                    <IconIndicator value={finalValue} />
+                                        <IconIndicator value={finalValue} />
+
+                                    </div>
+
+                                    <span className="text-white text-sm mt-1">
+                                        {ICON_TITLE[key]}
+                                    </span>
                                 </div>
                             );
                         })}
