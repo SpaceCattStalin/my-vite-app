@@ -25,7 +25,7 @@ export default function CharacterSelect({ onSelect }: CharacterSelectProps) {
                                transition p-4 flex flex-col items-center"
                 >
                     <img
-                        src="/public/assets/father.png"
+                        src="/assets/father.png"
                         alt="Cha"
                         className="w-32 h-32 object-cover rounded-lg mb-3"
                     />
@@ -41,7 +41,7 @@ export default function CharacterSelect({ onSelect }: CharacterSelectProps) {
                                transition p-4 flex flex-col items-center"
                 >
                     <img
-                        src="/public/assets/mother.png"
+                        src="/assets/mother.png"
                         alt="Mẹ"
                         className="w-32 h-32 object-cover rounded-lg mb-3"
                     />
