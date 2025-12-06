@@ -117,7 +117,7 @@ const Welcome = ({ setStage }: Props) => {
                     </div>
                 </header>
 
-                <h1 className="text-md sm:text-2xl font-medium text-[#231402] text-center px-4">
+                <h1 className="text-md font-medium text-[#231402] text-center px-4">
                     {currentNode.text}
                 </h1>
 
