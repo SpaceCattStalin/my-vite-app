@@ -1,14 +1,17 @@
+import bg from "../assets/bg.png";
+
 type MenuProps = {
     onPlay: () => void;
 };
 
 export default function Menu({ onPlay }: MenuProps) {
     return (
-         <div
+        <div
             className="flex flex-col items-center justify-center h-screen bg-cover bg-center"
-            style={{
-                backgroundImage: "url('/public/assets/bg.png')"
-            }}
+            // style={{
+            //     backgroundImage: "url('/assets/bg.png')"
+            // }}
+            style={{ backgroundImage: `url(${bg})` }}
         >
             <div className="backdrop-blur-sm bg-white/30 p-6 rounded-xl">
                 <h1 className="text-5xl font-bold text-[#231402] mb-10">
