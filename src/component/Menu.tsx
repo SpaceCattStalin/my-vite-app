@@ -1,4 +1,4 @@
-import bg from "../assets/bg.png";
+import bg from "/assets/bg.png";
 
 type MenuProps = {
     onPlay: () => void;
