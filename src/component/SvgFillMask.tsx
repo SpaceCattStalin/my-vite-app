@@ -4,6 +4,7 @@ type SvgFillMaskProps = {
     baseColor: string;
     fillColor: string;
     size?: number;
+    onClick?: () => void;
 };
 
 export default function SvgFillMask({
@@ -11,10 +12,13 @@ export default function SvgFillMask({
     percent,
     baseColor,
     fillColor,
-    size = 60
+    size = 60,
+    onClick
+
 }: SvgFillMaskProps) {
     return (
         <div
+            onClick={onClick}
             style={{
                 width: size,
                 height: size,
@@ -24,6 +28,7 @@ export default function SvgFillMask({
 
                 WebkitMask: `url(${icon}) center / contain no-repeat`,
                 backgroundColor: baseColor,
+                cursor: onClick ? "pointer" : "default"
             }}
         >
             {/* <div

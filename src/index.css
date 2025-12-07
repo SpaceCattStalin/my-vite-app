@@ -21,3 +21,14 @@ img {
   -webkit-user-select: none;
   -ms-user-select: none;
 }
+
+.icon {
+  user-drag: auto !important;
+  -webkit-user-drag: auto !important;
+  user-select: auto !important;
+  -moz-user-select: auto !important;
+  -webkit-user-select: auto !important;
+  -ms-user-select: auto !important;
+
+  cursor: pointer !important;
+}

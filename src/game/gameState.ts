@@ -11,7 +11,6 @@ export class GameState {
     stats: {
         kinhTe: number;
         doanKet: number;
-        anNinh: number;
         niemTin: number;
     };
     gameEnd: boolean;
@@ -21,7 +20,6 @@ export class GameState {
         this.currentNode = startNode;
         this.stats = {
             doanKet: 0,
-            anNinh: 0,
             kinhTe: 0,
             niemTin: 0,
         };
@@ -37,7 +35,6 @@ export class GameState {
             this.stats = {
                 kinhTe: 5,
                 doanKet: 5,
-                anNinh: 5,
                 niemTin: 5
             };
             this.eventCount = 0;

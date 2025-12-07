@@ -8,11 +8,11 @@ type CardProps = {
     currentEvent: EventNode,
     image: string,
     backgroundColor: string,
-    onChooseLeftAnswer: (choice: Choice) => void,
-    onChooseRightAnswer: (choice: Choice) => void;
+    onChooseLeftAnswer: (choice: Choice | null) => void,
+    onChooseRightAnswer: (choice: Choice | null) => void;
     isHoldingCallback: (state: boolean, threshold: number, currentEvent: EventNode) => void;
     threshold?: number;
-    setCurrentlySelectedChoice: (choice: Choice) => void;
+    setCurrentlySelectedChoice: (choice: Choice | null) => void;
 };
 
 export default function Card({
@@ -41,7 +41,7 @@ export default function Card({
     const opacityLeft = useTransform(animatedX, [-110, -50], [1, 0]);
     const opacityRight = useTransform(animatedX, [10, 150], [0, 1]);
 
-    const [threshold, setThreshold] = useState(160);
+    const [threshold] = useState(160);
 
 
     const THRESHOLD = threshold;
@@ -86,7 +86,7 @@ export default function Card({
         }
         else if (Math.abs(delta) <= 10 && lastPreviewRef.current !== null) {
             lastPreviewRef.current = null;
-            setCurrentlySelectedChoice(null as any);
+            setCurrentlySelectedChoice(null);
         }
 
         if (delta > THRESHOLD) {

@@ -3,28 +3,29 @@ import { useGameState } from "../game/store";
 import Card from "../component/EventCard";
 import SvgFillMask from "../component/SvgFillMask";
 
-import rice from "../assets/rice.svg?url";
-import hand from "../assets/hand.svg?url";
-import shield from "../assets/shield.svg?url";
-import star from "../assets/star.svg?url";
+// import rice from "../assets/rice.svg?url";
+// import hand from "../assets/hand.svg?url";
+// import shield from "../assets/shield.svg?url";
+// import star from "../assets/star.svg?url";
 import IconIndicator from "../component/IconIndicator";
 import type { Choice, EventNode } from '../game/type';
 
+const UTI_PATH = {
+    back: '/assets/back.svg',
+    question: '/assets/question.svg',
+};
+
 const ICON_PATHS: Record<string, string> = {
-    kinhTe: rice,
-    doanKet: hand,
-    anNinh: shield,
-    niemTin: star,
+    kinhTe: '/assets/rice.svg',
+    doanKet: '/assets/hand.svg',
+    niemTin: '/assets/star.svg',
 };
 
 const ICON_TITLE: Record<string, string> = {
-    kinhTe: "Kinh tế",
-    doanKet: "Đoàn kết",
-    anNinh: "An ninh",
-    niemTin: "Niềm tin",
+    kinhTe: 'Kinh tế',
+    doanKet: 'Đoàn kết',
+    niemTin: 'Niềm tin',
 };
-
-
 type Props = {
     setStage: (stage: "menu" | "select" | "game") => void;
 };
@@ -35,6 +36,7 @@ const Welcome = ({ setStage }: Props) => {
     const [boundaryValue, setBoundaryValue] = useState(180);
     const [currentEvent, setCurrentEvent] = useState<EventNode | null>(null);
     const [showDrawer, setShowDrawer] = useState(false);
+    const [showHelp, setShowHelp] = useState(false);
 
     useEffect(() => {
         if (gameEnd) {
@@ -42,14 +44,51 @@ const Welcome = ({ setStage }: Props) => {
         }
     }, [gameEnd]);
 
-    //const IconIndicator = IconInd as React.FC<React.SVGProps<SVGSVGElement>>;
     const [previewStats, setPreviewStats] = useState<Record<string, number> | null>(null);
 
     if (!currentNode) return <div>Kết thúc game</div>;
 
     return (
         <main className="flex items-center justify-center h-full">
-            <div className='flex-1 flex flex-col items-center gap-1 bg-[#BDA867] h-full pb-2'>
+            <div className="flex-1 flex flex-col items-center gap-1 bg-[#BDA867] h-full pb-2">
+                {showHelp && (
+                    <div className="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 flex items-center justify-center">
+                        <div className="bg-white w-[90%] p-6 rounded-2xl shadow-xl text-center flex flex-col gap-5">
+                            <h2 className="text-xl font-semibold text-[#231402]">Hướng dẫn chơi</h2>
+
+                            <div className="flex flex-col items-center gap-3">
+                                <img
+                                    src="/assets/tur1.png"
+                                    alt="tutorial 1"
+                                    className="w-full max-w-[400px] h-auto cursor-pointer"
+                                />
+
+                                <img
+                                    src="/assets/tur2.png"
+                                    alt="tutorial 1"
+                                    className="w-full max-w-[400px] h-auto cursor-pointer"
+                                />
+                                <img
+                                    src="/assets/tur3.png"
+                                    alt="tutorial 1"
+                                    className="w-full max-w-[400px] h-auto cursor-pointer"
+                                />
+                            </div>
+
+                            <div className="flex flex-col gap-2 text-[#3A2704] text-sm leading-relaxed text-left">
+                                <div>➤ Mách nhẹ: lúc kéo thẻ có thể phản hồi hơi chậm một chút nhé.</div>
+                                <div>➤ Cố gắng giữ cân bằng đến hết 20 sự kiện nhé!</div>
+                            </div>
+
+                            <button
+                                className="button-50 bg-[#D8B65A] text-black px-4 py-2 rounded-md font-medium"
+                                onClick={() => setShowHelp(false)}
+                            >
+                                Đã hiểu
+                            </button>
+                        </div>
+                    </div>
+                )}
 
                 {showDrawer && (
                     <div
@@ -58,8 +97,9 @@ const Welcome = ({ setStage }: Props) => {
                         px-5 py-5 rounded-xl shadow-2xl 
                         flex flex-col gap-3 z-50
                         transition-transform duration-500 ease-out
-                        ${showDrawer ? "translate-x-0 opacity-100" : "translate-x-[150%] opacity-0"}
-                    `}>
+                        ${showDrawer ? 'translate-x-0 opacity-100' : 'translate-x-[150%] opacity-0'}
+                    `}
+                    >
                         <div className="text-lg font-semibold">Trò chơi kết thúc</div>
 
                         <button
@@ -73,6 +113,10 @@ const Welcome = ({ setStage }: Props) => {
                         </button>
 
                         <button
+                            // onClick={() => {
+                            //     resetGame();
+                            //     router.push('/card_menu');
+                            // }}
                             onClick={() => {
                                 window.location.reload();
                             }}
@@ -83,9 +127,11 @@ const Welcome = ({ setStage }: Props) => {
                     </div>
                 )}
 
-                <header className='
+                <header
+                    className="
                 flex flex-col items-center gap-9 w-full bg-[#231402]
-                '>
+                "
+                >
                     <div className="flex flex-wrap gap-36 w-full justify-center py-2 bg-[#231402]">
                         {Object.entries(stats).map(([key, value]) => {
                             const iconPath = ICON_PATHS[key];
@@ -94,7 +140,6 @@ const Welcome = ({ setStage }: Props) => {
                             return (
                                 <div key={key} className="flex flex-col items-center">
                                     <div className="flex items-center px-2 mt-4">
-
                                         <SvgFillMask
                                             icon={iconPath}
                                             percent={(value / 10) * 100}
@@ -104,61 +149,44 @@ const Welcome = ({ setStage }: Props) => {
                                         />
 
                                         <IconIndicator value={finalValue} />
-
                                     </div>
 
-                                    <span className="text-white text-sm mt-1">
-                                        {ICON_TITLE[key]}
-                                    </span>
+                                    <span className="text-white text-sm mt-1">{ICON_TITLE[key]}</span>
                                 </div>
                             );
                         })}
-
                     </div>
                 </header>
+                <div className="absolute top-3 right-3 py-2 flex gap-2">
+                    {Object.entries(UTI_PATH).map(([key, path]) => (
+                        <SvgFillMask
+                            key={key}
+                            icon={path}
+                            percent={100}
+                            baseColor="#3A2704"
+                            fillColor="#D8B65A"
+                            size={20}
+                            onClick={() => {
+                                if (key === 'back') {
+                                    resetGame();
+                                    window.location.reload();
+                                }
 
-                <h1 className="text-md font-medium text-[#231402] text-center px-4">
-                    {currentNode.text}
-                </h1>
+                                if (key === 'question') {
+                                    setShowHelp(true);
+                                }
+                            }}
+                        />
+                    ))}
+                </div>
 
-                {/* <div className='w-full max-w-[500px] h-full flex flex-col flex-1'> */}
-                <div className='w-full max-w-[500px] px-4 h-full flex flex-col flex-1 items-center'>
-                    {/* {boundaryVisible && (
-                        <div className="absolute inset-0 top-18 pointer-events-none">
-                            <div
-                                className="absolute top-0 bottom-0 w-[2px] bg-gray-700"
-                                style={{ left: `calc(50% - ${boundaryValue}px)` }}
-                            />
+                <h1 className="text-md font-medium text-[#231402] text-center px-4">{currentNode.text}</h1>
 
-                            <div
-                                className="absolute top-0 bottom-0 w-[2px] bg-gray-700"
-                                style={{ left: `calc(50% + ${boundaryValue}px)` }}
-                            />
-                            
-                            <div
-                                className="absolute top-0 bottom-0 bg-gray-700/20"
-                                style={{
-                                    left: 0,
-                                    right: `calc(50% + ${boundaryValue}px)`
-                                }}
-                            />
-
-                            <div
-                                className="absolute top-0 bottom-0 bg-gray-700/20"
-                                style={{
-                                    left: `calc(70% - ${boundaryValue}px)`,
-                                    right: 0
-                                }}
-                            />
-                        </div>
-                    )} */}
-
+                <div className="w-full max-w-[500px] px-4 h-full flex flex-col flex-1 items-center">
                     <Card
                         image={currentNode.image as string}
                         backgroundColor="#ddd"
                         currentEvent={currentNode}
-                        // leftText={currentNode.left.text}
-                        // rightText={currentNode.right.text}
                         onChooseLeftAnswer={(choice) => applyChoice(choice)}
                         onChooseRightAnswer={(choice) => applyChoice(choice)}
                         isHoldingCallback={(isHolding: boolean, threshold: number, currentEvent: EventNode) => {
@@ -166,17 +194,18 @@ const Welcome = ({ setStage }: Props) => {
                             setBoundaryValue(threshold);
                             setCurrentEvent(currentEvent);
                         }}
-                        setCurrentlySelectedChoice={function (choice: Choice): void {
+                        setCurrentlySelectedChoice={function (choice: Choice | null): void {
                             if (!choice) return;
 
                             const { effects } = choice;
                             if (effects) {
                                 setPreviewStats(effects);
                             }
-                        }} />
+                        }}
+                    />
                 </div>
-            </div >
-        </main >
+            </div>
+        </main>
     );
 };
 

@@ -1,859 +1,762 @@
 [
   {
     "id": "e_1",
-    "title": "Tiếng Gõ Đêm Khuya",
+    "title": "Tiếng Gõ Cửa Buổi Tối",
     "text": [
-      "Đêm khuya, tiếng gõ cửa vang lên nhẹ nhưng gấp.",
-      " Là bác hàng xóm. Bác xin trú nhờ vì lính tuần đang lùng bắt ngoài đường."
+      "Bác hàng xóm gõ cửa xin trú nhờ vì khu phố vừa có kiểm tra tạm trú bất ngờ.",
+      " Bạn có nên giúp không?"
     ],
     "image": "/assets/e1.png",
     "role": "any",
-
     "left": {
-      "text": "Cho bác vào trú tạm",
-      "effects": {
-        "anNinh": -2,
-        "kinhTe": 0,
-        "doanKet": 2,
-        "niemTin": 1
-      }
+      "text": "Cho bác ở tạm",
+      "effects": { "kinhTe": 0, "doanKet": 2, "niemTin": 1 }
     },
     "right": {
-      "text": "Từ chối, bảo bác tìm chỗ khác",
-      "effects": {
-        "anNinh": 2,
-        "kinhTe": 0,
-        "doanKet": -2,
-        "niemTin": -1
-      }
+      "text": "Khuyên bác sang chỗ khác",
+      "effects": { "kinhTe": 0, "doanKet": -2, "niemTin": -1 }
     },
     "next": null
   },
 
   {
     "id": "e_2",
-    "title": "Mẩu Giấy Bí Ẩn",
+    "title": "Gói Tài Liệu Lạ",
     "text": [
-      "Sáng hôm sau, bạn thấy một mẩu giấy lạ nằm dưới gầm cửa.",
-      " Chỉ vài ký hiệu nguệch ngoạc… hay là tín hiệu của ai đó?"
+      "Một gói tài liệu bị bỏ nhầm trong hòm thư nhà bạn.",
+      " Hình như là tài liệu tuyên truyền cộng đồng của khu phố."
     ],
-    "image": "/assets/sec.png",
+    "image": "/assets/e2.png",
     "role": "any",
     "left": {
-      "text": "Giữ lại và tìm hiểu",
-      "effects": {
-        "anNinh": -1,
-        "kinhTe": 0,
-        "doanKet": 0,
-        "niemTin": 2
-      }
+      "text": "Giữ lại đọc kỹ",
+      "effects": { "kinhTe": 0, "doanKet": 1, "niemTin": 2 }
     },
     "right": {
-      "text": "Đốt ngay cho an toàn",
-      "effects": {
-        "anNinh": 1,
-        "kinhTe": 0,
-        "doanKet": 0,
-        "niemTin": -1
-      }
+      "text": "Trả lại tổ dân phố",
+      "effects": { "kinhTe": 0, "doanKet": 0, "niemTin": -1 }
     },
     "next": null
   },
 
   {
     "id": "e_3",
-    "title": "Hai lính tuần ghé nhà",
+    "title": "Kiểm Tra Tạm Trú",
     "text": [
-      "Lính tuần ghé nhà, hỏi tối qua có ai lạ ra vào không.",
-      " Ánh mắt họ soi từng góc nhà, vẻ đầy nghi ngờ."
+      "Công an khu vực ghé nhà kiểm tra thông tin tạm trú.",
+      " Thái độ nghiêm nhưng đúng quy định."
     ],
-    "image": "/assets/e17.png",
+    "image": "/assets/e3.png",
     "role": "any",
     "left": {
-      "text": "Khai là không thấy ai cả",
-      "effects": {
-        "anNinh": 2,
-        "kinhTe": 0,
-        "doanKet": -2,
-        "niemTin": 0
-      }
+      "text": "Hợp tác đầy đủ",
+      "effects": { "kinhTe": 0, "doanKet": 0, "niemTin": 1 }
     },
     "right": {
-      "text": "Nói bóng gió rằng có người lạ đi ngang",
-      "effects": {
-        "anNinh": -2,
-        "kinhTe": 0,
-        "doanKet": 2,
-        "niemTin": 0
-      }
+      "text": "Tỏ ra khó chịu",
+      "effects": { "kinhTe": 0, "doanKet": -1, "niemTin": -1 }
     },
     "next": null
   },
+
   {
     "id": "e_4",
-    "title": "Dấu Chân Sau Vườn",
+    "title": "Camera Trước Nhà",
     "text": [
-      "Sau vườn có dấu chân lạ. Đêm qua chắc có người quanh đây.",
-      " Là người chạy trốn… hay kẻ theo dõi gia đình bạn?"
+      "Hàng xóm đề nghị lắp camera chung để tăng an ninh khu phố.",
+      " Bạn thấy hợp lý nhưng hơi tốn tiền."
     ],
-    "image": "/assets/shoe.png",
-    "left": {
-      "text": "Đi theo dấu chân để điều tra",
-      "effects": {
-        "anNinh": -1,
-        "kinhTe": 0,
-        "doanKet": 0,
-        "niemTin": 1
-      }
-    },
+    "image": "/assets/e4.png",
     "role": "any",
+    "left": {
+      "text": "Góp tiền lắp camera",
+      "effects": { "kinhTe": -1, "doanKet": 1, "niemTin": 1 }
+    },
     "right": {
-      "text": "Xóa dấu chân và giữ im lặng",
-      "effects": {
-        "anNinh": 1,
-        "kinhTe": 0,
-        "doanKet": 0,
-        "niemTin": -1
-      }
+      "text": "Từ chối",
+      "effects": { "kinhTe": 1, "doanKet": -1, "niemTin": -1 }
     },
     "next": null
   },
 
   {
     "id": "e_5",
-    "title": "Tin Đồn Về Bác Hàng Xóm",
+    "title": "Tin Đồn Trong Chung Cư",
     "text": [
-      "Trong làng rộ lên tin đồn: bác hàng xóm có liên quan đến phong trào yêu nước.",
-      " Một số người nói bác là chỉ điểm. Người khác bảo bác là người tốt."
+      "Cư dân bàn tán về bác hàng xóm.",
+      " Người khen hết mình, kẻ chê đủ thứ."
     ],
     "image": "/assets/e5.png",
+    "role": "any",
     "left": {
       "text": "Tin bác là người tốt",
-      "effects": {
-        "anNinh": -1,
-        "kinhTe": 0,
-        "doanKet": 2,
-        "niemTin": 1
-      }
+      "effects": { "kinhTe": 0, "doanKet": 2, "niemTin": 1 }
     },
-    "role": "any",
     "right": {
-      "text": "Tin bác là người đáng ngờ",
-      "effects": {
-        "anNinh": 1,
-        "kinhTe": 0,
-        "doanKet": -2,
-        "niemTin": -1
-      }
+      "text": "Tránh xa bác",
+      "effects": { "kinhTe": 0, "doanKet": -2, "niemTin": -1 }
     },
     "next": null
   },
 
   {
     "id": "e_6",
-    "title": "Lời Mời Làm Việc Nhà Giàu",
+    "title": "Lời Mời Làm Thêm",
     "text": [
-      "Một gia đình giàu trong làng mời bạn làm việc lặt vặt.",
-      " Lương khá… nhưng họ nổi tiếng thân lính Pháp."
+      "Một gia đình khá giả mời bạn làm việc nhà cuối tuần.",
+      " Lương cao nhưng mất thời gian nghỉ."
     ],
     "image": "/assets/e6.png",
-    "left": {
-      "text": "Nhận việc để kiếm thêm tiền",
-      "effects": {
-        "anNinh": -2,
-        "kinhTe": 2,
-        "doanKet": -1,
-        "niemTin": 0
-      }
-    },
     "role": "any",
+    "left": {
+      "text": "Nhận việc",
+      "effects": { "kinhTe": 2, "doanKet": -1, "niemTin": 0 }
+    },
     "right": {
-      "text": "Từ chối vì không muốn dính líu",
-      "effects": {
-        "anNinh": 2,
-        "kinhTe": -1,
-        "doanKet": 1,
-        "niemTin": 0
-      }
+      "text": "Từ chối",
+      "effects": { "kinhTe": -1, "doanKet": 1, "niemTin": 1 }
     },
     "next": null
   },
 
   {
     "id": "e_7",
-    "title": "Tư Sản Đề Nghị Bán Rẻ Lúa",
+    "title": "Giá Điện Tăng",
     "text": [
-      "Một tay tư sản muốn mua lúa nhà bạn với giá thấp bất thường.",
-      " Ông ta nói đây là “giúp đỡ”. Nhưng ánh mắt lại không giống vậy."
+      "Giá điện tăng khiến hoá đơn tăng mạnh.",
+      " Bạn phải điều chỉnh chi tiêu."
     ],
     "image": "/assets/e7.png",
     "role": "any",
     "left": {
-      "text": "Bán cho ông ta cho xong việc",
-      "effects": {
-        "anNinh": 2,
-        "kinhTe": -2,
-        "doanKet": 0,
-        "niemTin": -1
-      }
+      "text": "Tiết kiệm điện",
+      "effects": { "kinhTe": 2, "doanKet": -1, "niemTin": 0 }
     },
     "right": {
-      "text": "Giữ lúa lại, không bán rẻ",
-      "effects": {
-        "anNinh": -1,
-        "kinhTe": 2,
-        "doanKet": 1,
-        "niemTin": 1
-      }
+      "text": "Dùng như cũ",
+      "effects": { "kinhTe": -2, "doanKet": 1, "niemTin": -1 }
     },
     "next": null
   },
 
   {
     "id": "e_8",
-    "title": "Cho Vay Nặng Lãi",
-    "text": [
-      "Một người lạ đề nghị cho gia đình bạn vay tiền nhanh.",
-      " Lãi suất thì… cao đến mức đáng sợ."
-    ],
-    "image": "/assets/e7.png",
+    "title": "Vay Mua Xe Máy",
+    "text": ["Có chương trình mua xe trả góp.", " Xe hiện tại đã cũ."],
+    "image": "/assets/e8.png",
     "role": "any",
     "left": {
-      "text": "Nhận tiền vay dù lãi cao",
-      "effects": {
-        "anNinh": -1,
-        "kinhTe": 2,
-        "doanKet": -1,
-        "niemTin": -1
-      }
+      "text": "Vay mua xe mới",
+      "effects": { "kinhTe": -2, "doanKet": 1, "niemTin": 1 }
     },
     "right": {
-      "text": "Từ chối vì quá nguy hiểm",
-      "effects": {
-        "anNinh": 1,
-        "kinhTe": -1,
-        "doanKet": 1,
-        "niemTin": 1
-      }
+      "text": "Dùng xe cũ",
+      "effects": { "kinhTe": 1, "doanKet": 0, "niemTin": 0 }
     },
     "next": null
   },
 
   {
     "id": "e_9",
-    "title": "Hối Lộ Nhẹ",
-    "text": [
-      "Một lính tuần kín đáo gợi ý: đưa ít quà bánh thì sẽ ‘bỏ qua’ kiểm tra nhà.",
-      " Gia đình bạn đang bị họ để ý nhiều hơn."
-    ],
+    "title": "Góp Quỹ Từ Thiện",
+    "text": ["Khu phố đang quyên góp giúp hộ nghèo.", " Bạn được mời đóng góp."],
     "image": "/assets/e9.png",
     "role": "any",
     "left": {
-      "text": "Đưa chút quà để mọi chuyện yên ổn",
-      "effects": {
-        "anNinh": 2,
-        "kinhTe": -1,
-        "doanKet": -1,
-        "niemTin": -1
-      }
+      "text": "Góp một ít",
+      "effects": { "kinhTe": -1, "doanKet": 2, "niemTin": 1 }
     },
     "right": {
-      "text": "Từ chối và chấp nhận rủi ro",
-      "effects": {
-        "anNinh": -2,
-        "kinhTe": 0,
-        "doanKet": 1,
-        "niemTin": 1
-      }
+      "text": "Không góp",
+      "effects": { "kinhTe": 1, "doanKet": -2, "niemTin": -1 }
     },
     "next": null
   },
 
   {
     "id": "e_10",
-    "title": "Đầu Tư Mạo Hiểm",
+    "title": "Mua Đồ Online",
     "text": [
-      "Có người rủ bạn góp vốn vào một chuyến buôn lậu muối.",
-      " Nếu lời thì kinh tế gia đình khá lên, nếu lỗ thì trắng tay."
+      "Một món đồ giảm giá mạnh.",
+      " Không chắc chất lượng có tốt không."
     ],
     "image": "/assets/e10.png",
     "role": "any",
     "left": {
-      "text": "Tham gia chuyến buôn lậu muối",
-      "effects": {
-        "anNinh": -1,
-        "kinhTe": 3,
-        "doanKet": -1,
-        "niemTin": 1
-      }
+      "text": "Mua thử",
+      "effects": { "kinhTe": -1, "doanKet": 1, "niemTin": 1 }
     },
     "right": {
-      "text": "Không tham gia, quá nguy hiểm",
-      "effects": {
-        "anNinh": 1,
-        "kinhTe": 0,
-        "doanKet": 1,
-        "niemTin": -1
-      }
+      "text": "Không mua",
+      "effects": { "kinhTe": 1, "doanKet": 0, "niemTin": -1 }
     },
     "next": null
   },
+
   {
     "id": "e_11",
-    "title": "Vụ Mùa Xấu",
-    "text": [
-      "Mưa nắng thất thường khiến vụ mùa năm nay thất thu.",
-      " Gia đình bạn đang thiếu lúa trầm trọng."
-    ],
-    "image": "/assets/e11.png",
+    "title": "Con Trai Áp Lực Học Thêm",
+    "text": ["Con trai than rằng lịch học thêm quá tải."],
+    "image": "/assets/son.png",
     "role": "any",
     "left": {
-      "text": "Bán gia súc để bù lỗ",
-      "effects": { "anNinh": -1, "kinhTe": 2, "doanKet": -1, "niemTin": 1 }
+      "text": "Cho nghỉ bớt",
+      "effects": { "kinhTe": 1, "doanKet": 2, "niemTin": 1 }
     },
     "right": {
-      "text": "Thắt chặt chi tiêu",
-      "effects": { "anNinh": 1, "kinhTe": -1, "doanKet": 1, "niemTin": 0 }
+      "text": "Giữ nguyên",
+      "effects": { "kinhTe": -1, "doanKet": -2, "niemTin": -1 }
     },
     "next": null
   },
 
   {
     "id": "e_12",
-    "title": "Đổi Vàng Sang Lúa",
+    "title": "Con Gái Nghiện Điện Thoại",
+    "text": ["Con gái dành quá nhiều thời gian cho mạng xã hội."],
+    "image": "/assets/daughter.png",
     "role": "any",
-    "text": [
-      "Giá lúa tăng. Một lái buôn đề nghị đổi vàng lấy lúa.",
-      " Lượng vàng của gia đình không còn nhiều."
-    ],
-    "image": "/assets/e12.png",
     "left": {
-      "text": "Đổi phần lớn vàng",
-      "effects": { "anNinh": 0, "kinhTe": -3, "doanKet": 0, "niemTin": 0 }
+      "text": "Giới hạn thời gian",
+      "effects": { "kinhTe": 0, "doanKet": -1, "niemTin": 2 }
     },
     "right": {
-      "text": "Giữ vàng, chấp nhận thiếu ăn",
-      "effects": { "anNinh": 0, "kinhTe": 0, "doanKet": -2, "niemTin": -1 }
+      "text": "Tự quản lý",
+      "effects": { "kinhTe": 0, "doanKet": 1, "niemTin": -2 }
     },
     "next": null
   },
 
   {
     "id": "e_13",
-    "title": "Anh Trai Muốn Bỏ Học Đi Làm",
-    "role": "any",
+    "title": "Việc Nhà Mất Cân Bằng",
     "text": [
-      "Con trai nói muốn nghỉ học để phụ gia đình kiếm tiền.",
-      " Việc này có thể thay đổi tương lai của ảnh."
+      "Gần đây việc nhà toàn dồn về một người.",
+      " Không khí bắt đầu căng thẳng."
     ],
-    "image": "/assets/son.png",
+    "image": "/assets/e13.png",
+    "role": "any",
     "left": {
-      "text": "Để con nghỉ học",
-      "effects": { "anNinh": 0, "kinhTe": 2, "doanKet": -1, "niemTin": -1 }
+      "text": "Phân chia lại",
+      "effects": { "kinhTe": 0, "doanKet": 3, "niemTin": 1 }
     },
     "right": {
-      "text": "Bắt tiếp tục đi học",
-      "effects": { "anNinh": 1, "kinhTe": -1, "doanKet": 2, "niemTin": 1 }
+      "text": "Ai rảnh thì làm",
+      "effects": { "kinhTe": 0, "doanKet": -2, "niemTin": -1 }
     },
     "next": null
   },
 
   {
     "id": "e_14",
-    "title": "Em Gái Muốn Học Chữ Tây",
-    "text": [
-      "Con gái xin tiền để học chữ Tây vì muốn mở mang kiến thức.",
-      " Học phí khá cao, nhưng có lợi về lâu dài."
-    ],
+    "title": "Chó Sủa Suốt Đêm",
+    "text": ["Con chó sủa cả đêm khiến hàng xóm khó chịu."],
+    "image": "/assets/e14.png",
     "role": "any",
-    "image": "/assets/daughter.png",
     "left": {
-      "text": "Cho đi học",
-      "effects": { "anNinh": -1, "kinhTe": -2, "doanKet": 2, "niemTin": 2 }
+      "text": "Đưa đi khám",
+      "effects": { "kinhTe": -1, "doanKet": 2, "niemTin": 1 }
     },
     "right": {
-      "text": "Từ chối",
-      "effects": { "anNinh": 1, "kinhTe": 1, "doanKet": -1, "niemTin": -1 }
+      "text": "Kệ nó",
+      "effects": { "kinhTe": 0, "doanKet": -2, "niemTin": -1 }
     },
     "next": null
   },
 
   {
     "id": "e_15",
-    "title": "Chợ Tăng Thuế",
-    "text": [
-      "Chợ làng bất ngờ tăng thuế lớn khiến các gia đình khó xoay sở.",
-      " Bạn phải đưa ra hướng đối phó."
-    ],
+    "title": "Mèo Làm Vỡ Bình",
+    "text": ["Mèo làm vỡ đồ kỷ niệm trong nhà."],
+    "image": "/assets/e15.png",
     "role": "any",
-    "image": "/assets/market.png",
     "left": {
-      "text": "Đóng thêm thuế",
-      "effects": { "anNinh": 1, "kinhTe": -2, "doanKet": 1, "niemTin": 0 }
+      "text": "Tha lỗi, dọn dẹp",
+      "effects": { "kinhTe": -1, "doanKet": 2, "niemTin": 1 }
     },
     "right": {
-      "text": "Lách luật",
-      "effects": { "anNinh": -2, "kinhTe": 2, "doanKet": -1, "niemTin": -1 }
+      "text": "Mắng mèo",
+      "effects": { "kinhTe": 0, "doanKet": -2, "niemTin": -1 }
     },
     "next": null
   },
 
   {
     "id": "e_16",
-    "title": "Điểm Danh Dân Đinh",
-    "text": [
-      "Quan làng mở cuộc điểm danh để rà soát dân đinh.",
-      " Người nào thiếu mặt sẽ bị coi là bất trung."
-    ],
-    "role": "any",
+    "title": "Ngập Nước Cuối Tuần",
+    "text": ["Cơn mưa lớn khiến con hẻm bị ngập nhẹ."],
     "image": "/assets/e16.png",
+    "role": "any",
     "left": {
-      "text": "Tham gia đầy đủ",
-      "effects": { "anNinh": 2, "kinhTe": -1, "doanKet": 1, "niemTin": 1 }
+      "text": "Ra phụ thông cống",
+      "effects": { "kinhTe": 0, "doanKet": 2, "niemTin": 1 }
     },
     "right": {
-      "text": "Trốn điểm danh",
-      "effects": { "anNinh": -2, "kinhTe": 1, "doanKet": -1, "niemTin": -1 }
+      "text": "Ở nhà",
+      "effects": { "kinhTe": 0, "doanKet": -1, "niemTin": -1 }
     },
     "next": null
   },
 
   {
     "id": "e_17",
-    "title": "Lính Lục Soát",
-    "text": [
-      "Lính bất ngờ đến lục soát nhà vì nghi ngờ có người trốn.",
-      " Họ nhìn bạn với ánh mắt dò xét."
-    ],
-    "role": "any",
+    "title": "Lỗi Điện Trong Nhà",
+    "text": ["Điện chập chờn liên tục.", " Thợ báo giá sửa khá cao."],
     "image": "/assets/e17.png",
+    "role": "any",
     "left": {
-      "text": "Hợp tác",
-      "effects": { "anNinh": 2, "kinhTe": 0, "doanKet": -1, "niemTin": -1 }
+      "text": "Sửa ngay",
+      "effects": { "kinhTe": -2, "doanKet": 1, "niemTin": 1 }
     },
     "right": {
-      "text": "Cản trở",
-      "effects": { "anNinh": -2, "kinhTe": 0, "doanKet": 1, "niemTin": 2 }
+      "text": "Để thêm vài tuần",
+      "effects": { "kinhTe": 1, "doanKet": -1, "niemTin": -1 }
     },
     "next": null
   },
 
   {
     "id": "e_18",
-    "title": "Chỉ Điểm Trong Làng",
-    "text": [
-      "Có người trong làng bị tố cáo là chỉ điểm cho lính.",
-      " Không ai biết thực hư, nhưng không khí rất căng thẳng."
-    ],
-    "role": "any",
+    "title": "Nợ Thẻ Tín Dụng",
+    "text": ["Thẻ tín dụng đến hạn thanh toán."],
     "image": "/assets/e18.png",
+    "role": "any",
     "left": {
-      "text": "Đứng về phía người bị tố",
-      "effects": { "anNinh": -1, "kinhTe": 0, "doanKet": 2, "niemTin": 1 }
+      "text": "Trả đủ",
+      "effects": { "kinhTe": -2, "doanKet": 0, "niemTin": 1 }
     },
     "right": {
-      "text": "Tin vào lời tố",
-      "effects": { "anNinh": 1, "kinhTe": 0, "doanKet": -2, "niemTin": -1 }
+      "text": "Trả tối thiểu",
+      "effects": { "kinhTe": 1, "doanKet": 0, "niemTin": -1 }
     },
     "next": null
   },
 
   {
     "id": "e_19",
-    "title": "Tin Mật Thám",
-    "text": [
-      "Bạn nghe loáng thoáng rằng mật thám đang điều tra quanh khu vực.",
-      " Gia đình nên chuẩn bị tâm lý."
-    ],
-    "role": "any",
+    "title": "Sinh Hoạt Tổ Dân Phố",
+    "text": ["Khu dân cư họp định kỳ."],
     "image": "/assets/e19.png",
+    "role": "any",
     "left": {
-      "text": "Giấu đồ đạc khả nghi",
-      "effects": { "anNinh": -1, "kinhTe": 0, "doanKet": 1, "niemTin": 1 }
+      "text": "Tham gia",
+      "effects": { "kinhTe": 0, "doanKet": 1, "niemTin": 1 }
     },
     "right": {
-      "text": "Phớt lờ",
-      "effects": { "anNinh": 1, "kinhTe": 0, "doanKet": -1, "niemTin": -1 }
+      "text": "Không tham gia",
+      "effects": { "kinhTe": 0, "doanKet": -1, "niemTin": -1 }
     },
     "next": null
   },
 
   {
     "id": "e_20",
-    "title": "Người Lạ Xin Nước",
-    "text": [
-      "Một người lạ mặt ghé xin nước uống. Trông ông ta mệt mỏi và bụi bặm.",
-      " Không rõ là người tốt hay kẻ theo dõi."
-    ],
+    "title": "Con Trai Muốn Chơi Game",
+    "text": ["Con trai xin chơi game buổi tối."],
+    "image": "/assets/son.png",
     "role": "any",
-    "image": "/assets/stranger.png",
     "left": {
-      "text": "Cho nước & nghỉ chân",
-      "effects": { "anNinh": -2, "kinhTe": -1, "doanKet": 2, "niemTin": 1 }
+      "text": "Cho chơi nhưng giới hạn",
+      "effects": { "kinhTe": 0, "doanKet": 1, "niemTin": 1 }
     },
     "right": {
-      "text": "Từ chối",
-      "effects": { "anNinh": 2, "kinhTe": 0, "doanKet": -1, "niemTin": -1 }
+      "text": "Cấm chơi",
+      "effects": { "kinhTe": 0, "doanKet": -2, "niemTin": -1 }
     },
     "next": null
   },
+
   {
     "id": "e_21",
-    "title": "Chồng Muốn Tham Gia Hội Tương Trợ",
-    "text": [
-      "Chồng nghe tin trong làng vừa lập hội tương trợ giúp đỡ nhau lúc khó khăn.",
-      " Nhưng tham gia nghĩa là phải đóng góp một phần lương thực."
-    ],
-    "role": "mother",
-    "image": "/assets/father.png",
+    "title": "Con Gái Gia Nhập CLB",
+    "text": ["Con gái muốn tham gia CLB âm nhạc."],
+    "image": "/assets/daughter.png",
+    "role": "any",
     "left": {
-      "text": "Đồng ý cho chồng tham gia",
-      "effects": { "anNinh": -1, "kinhTe": -1, "doanKet": 2, "niemTin": 2 }
+      "text": "Cho tham gia",
+      "effects": { "kinhTe": -1, "doanKet": 2, "niemTin": 2 }
     },
     "right": {
-      "text": "Khuyên chồng ở nhà lo kinh tế",
-      "effects": { "anNinh": 1, "kinhTe": 1, "doanKet": -1, "niemTin": -1 }
+      "text": "Không đồng ý",
+      "effects": { "kinhTe": 0, "doanKet": -2, "niemTin": -1 }
     },
     "next": null
   },
 
   {
     "id": "e_22",
-    "title": "Vợ Tham Gia Hợp Tác Xã Dệt Vải",
-    "role": "father",
-    "text": [
-      "Phong trào lập hợp tác xã dệt vải đang lan rộng.",
-      " Vợ bạn được mời tham gia buổi đầu tiên."
-    ],
-    "image": "/assets/mother.png",
+    "title": "Áp Lực Việc Làm",
+    "text": ["Công ty yêu cầu tăng ca."],
+    "image": "/assets/e22.png",
+    "role": "any",
     "left": {
-      "text": "Để vợ tham gia HTX",
-      "effects": { "anNinh": 0, "kinhTe": 2, "doanKet": 1, "niemTin": 1 }
+      "text": "Làm thêm",
+      "effects": { "kinhTe": 2, "doanKet": -2, "niemTin": -1 }
     },
     "right": {
-      "text": "Giữ vợ ở nhà vì lo công việc",
-      "effects": { "anNinh": 0, "kinhTe": -1, "doanKet": -1, "niemTin": -1 }
+      "text": "Từ chối",
+      "effects": { "kinhTe": -2, "doanKet": 2, "niemTin": 1 }
     },
     "next": null
   },
 
   {
     "id": "e_23",
-    "title": "Con Trai Muốn Tập Võ",
+    "title": "Giá Xăng Tăng",
+    "text": ["Giá xăng tăng khiến chi phí đi lại đội lên."],
+    "image": "/assets/e23.png",
     "role": "any",
-    "text": [
-      "Con trai muốn tham gia lớp võ do thanh niên làng tổ chức.",
-      " Nó nói muốn sau này bảo vệ gia đình."
-    ],
-    "image": "/assets/son.png",
     "left": {
-      "text": "Cho tham gia lớp võ",
-      "effects": { "anNinh": 2, "kinhTe": -1, "doanKet": 1, "niemTin": 1 }
+      "text": "Vẫn đi xe máy",
+      "effects": { "kinhTe": -2, "doanKet": 1, "niemTin": 0 }
     },
     "right": {
-      "text": "Bắt ở nhà làm việc",
-      "effects": { "anNinh": -1, "kinhTe": 1, "doanKet": -1, "niemTin": -1 }
+      "text": "Chuyển sang xe buýt",
+      "effects": { "kinhTe": 1, "doanKet": -1, "niemTin": 1 }
     },
     "next": null
   },
 
   {
     "id": "e_24",
-    "title": "Con Gái Muốn Tham Gia Đoàn Thiếu Nhi",
+    "title": "Ngày Chủ Nhật Xanh",
+    "text": ["Khu phố tổ chức dọn vệ sinh môi trường."],
+    "image": "/assets/e24.png",
     "role": "any",
-    "text": [
-      "Con gái háo hức muốn tham gia đoàn thiếu nhi mới thành lập.",
-      " Nhưng điều này nghĩa là mất thêm thời gian phụ việc nhà."
-    ],
-    "image": "/assets/daughter.png",
     "left": {
-      "text": "Cho tham gia đoàn",
-      "effects": { "anNinh": 0, "kinhTe": -1, "doanKet": 2, "niemTin": 1 }
+      "text": "Tham gia",
+      "effects": { "kinhTe": 0, "doanKet": 2, "niemTin": 2 }
     },
     "right": {
-      "text": "Không cho, giữ ở nhà",
-      "effects": { "anNinh": 1, "kinhTe": 0, "doanKet": -2, "niemTin": -1 }
+      "text": "Không tham gia",
+      "effects": { "kinhTe": 0, "doanKet": -2, "niemTin": -1 }
     },
     "next": null
   },
 
   {
     "id": "e_25",
-    "title": "Chồng Bị Mời Lên Xã Làm Việc Công",
-    "role": "mother",
-    "text": [
-      "Xã yêu cầu cha tham gia làm đường liên thôn.",
-      " Việc nặng và tốn nhiều ngày công."
-    ],
-    "image": "/assets/father.png",
+    "title": "Nhà Bên Mở Nhạc Lớn",
+    "text": ["Hàng xóm mở nhạc lớn lúc tối."],
+    "image": "/assets/e25.png",
+    "role": "any",
     "left": {
-      "text": "Để chồng đi làm nghĩa vụ",
-      "effects": { "anNinh": 1, "kinhTe": -2, "doanKet": 2, "niemTin": 1 }
+      "text": "Nhắc nhẹ",
+      "effects": { "kinhTe": 0, "doanKet": 1, "niemTin": 1 }
     },
     "right": {
-      "text": "Khuyên chồng tìm cách từ chối",
-      "effects": { "anNinh": -2, "kinhTe": 1, "doanKet": -1, "niemTin": -1 }
+      "text": "Phàn nàn lên nhóm cư dân",
+      "effects": { "kinhTe": 0, "doanKet": -2, "niemTin": -1 }
     },
     "next": null
   },
 
   {
     "id": "e_26",
-    "title": "Vợ Bị Mời Tham Gia Tuyên Truyền",
-    "role": "father",
-    "text": [
-      "Vợ được mời hỗ trợ buổi tuyên truyền về bình đẳng giới.",
-      " Một số người trong làng không thích điều này."
-    ],
-    "image": "/assets/mother.png",
+    "title": "Mèo Cào Sofa",
+    "text": ["Mèo làm trầy bộ sofa mới."],
+    "image": "/assets/cat.png",
+    "role": "any",
     "left": {
-      "text": "Để vợ tham gia",
-      "effects": { "anNinh": -1, "kinhTe": 0, "doanKet": 1, "niemTin": 2 }
+      "text": "Mua miếng cào",
+      "effects": { "kinhTe": -1, "doanKet": 2, "niemTin": 1 }
     },
     "right": {
-      "text": "Khuyên vợ từ chối",
-      "effects": { "anNinh": 1, "kinhTe": 0, "doanKet": -1, "niemTin": -1 }
+      "text": "Phạt mèo",
+      "effects": { "kinhTe": 0, "doanKet": -2, "niemTin": -1 }
     },
     "next": null
   },
 
   {
     "id": "e_27",
-    "title": "Con Trai Bị Rủ Vào Nhóm Tự Vệ",
+    "title": "Chó Đến Hạn Tiêm Phòng",
+    "text": ["Đến lịch tiêm phòng cho chó."],
+    "image": "/assets/e14.png",
     "role": "any",
-    "text": [
-      "Con trai bị mấy anh thanh niên rủ vào đội tự vệ làng.",
-      " Nguy hiểm nhưng có thể giúp ích."
-    ],
-    "image": "/assets/son.png",
     "left": {
-      "text": "Để nó tham gia",
-      "effects": { "anNinh": 3, "kinhTe": -1, "doanKet": -1, "niemTin": 2 }
+      "text": "Tiêm đầy đủ",
+      "effects": { "kinhTe": -2, "doanKet": 1, "niemTin": 1 }
     },
     "right": {
-      "text": "Bắt nó ở nhà cho an toàn",
-      "effects": { "anNinh": -2, "kinhTe": 1, "doanKet": 2, "niemTin": -1 }
+      "text": "Không tiêm",
+      "effects": { "kinhTe": 1, "doanKet": -1, "niemTin": -1 }
     },
     "next": null
   },
 
   {
     "id": "e_28",
-    "title": "Con Gái Muốn Đi Học Xa",
+    "title": "Giá Thực Phẩm Tăng",
+    "text": ["Giá thực phẩm tăng mạnh."],
+    "image": "/assets/e28.png",
     "role": "any",
-    "text": [
-      "Con gái nhận được lời mời học ở trường huyện.",
-      " Nhưng đường đi xa và tốn nhiều chi phí."
-    ],
-    "image": "/assets/daughter.png",
     "left": {
-      "text": "Cho em đi học huyện",
-      "effects": { "anNinh": -1, "kinhTe": -2, "doanKet": 1, "niemTin": 2 }
+      "text": "Ăn tiết kiệm",
+      "effects": { "kinhTe": 2, "doanKet": -1, "niemTin": 0 }
     },
     "right": {
-      "text": "Từ chối vì kinh tế",
-      "effects": { "anNinh": 1, "kinhTe": 2, "doanKet": -1, "niemTin": -1 }
+      "text": "Giữ khẩu phần",
+      "effects": { "kinhTe": -2, "doanKet": 1, "niemTin": -1 }
     },
     "next": null
   },
 
   {
     "id": "e_29",
-    "title": "Chồng Muốn Sửa Lại Nhà",
-    "role": "mother",
-    "text": [
-      "Chồng nói mái nhà sắp dột. Cần sửa gấp.",
-      " Nhưng kinh tế hiện giờ rất khó khăn."
-    ],
-    "image": "/assets/father.png",
+    "title": "Tranh Cãi Nhỏ",
+    "text": ["Không khí trong nhà hơi căng thẳng."],
+    "image": "/assets/e29.png",
+    "role": "any",
     "left": {
-      "text": "Dốc tiền sửa ngay",
-      "effects": { "anNinh": 1, "kinhTe": -3, "doanKet": 1, "niemTin": 0 }
+      "text": "Ngồi lại nói chuyện",
+      "effects": { "kinhTe": 0, "doanKet": 3, "niemTin": 1 }
     },
     "right": {
-      "text": "Chờ thêm chút nữa",
-      "effects": { "anNinh": -1, "kinhTe": 1, "doanKet": -1, "niemTin": -1 }
+      "text": "Ai về phòng nấy",
+      "effects": { "kinhTe": 0, "doanKet": -3, "niemTin": -1 }
     },
     "next": null
   },
 
   {
     "id": "e_30",
-    "title": "Vợ Muốn Bán Hàng Ở Chợ Mới",
-    "role": "father",
-    "text": [
-      "Xã mở chợ mới, vợ bạn muốn thuê sạp để bán hàng.",
-      " Cơ hội kiếm tiền, nhưng rủi ro vì thuế cao."
-    ],
+    "title": "Vợ Muốn Học Nghề",
+    "text": ["Vợ muốn học nghề mới để đổi việc."],
     "image": "/assets/mother.png",
+    "role": "father",
     "left": {
-      "text": "Cho vợ thuê sạp",
-      "effects": { "anNinh": 0, "kinhTe": 2, "doanKet": 1, "niemTin": 1 }
+      "text": "Cho học",
+      "effects": { "kinhTe": -2, "doanKet": 2, "niemTin": 2 }
     },
     "right": {
-      "text": "Từ chối ý định",
-      "effects": { "anNinh": 0, "kinhTe": -1, "doanKet": -1, "niemTin": -1 }
+      "text": "Khuyên tiết kiệm",
+      "effects": { "kinhTe": 2, "doanKet": -2, "niemTin": -1 }
     },
     "next": null
   },
 
   {
     "id": "e_31",
-    "title": "Con Trai Muốn Nhập Ngũ",
-    "role": "any",
-    "text": [
-      "Con trai bày tỏ muốn nhập ngũ theo tiếng gọi bảo vệ quê hương.",
-      " Mẹ thì sợ nguy hiểm, cha thì tự hào."
-    ],
-    "image": "/assets/son.png",
+    "title": "Chồng Muốn Đổi Việc",
+    "text": ["Chồng muốn chuyển sang công việc mới áp lực hơn."],
+    "image": "/assets/father.png",
+    "role": "mother",
     "left": {
-      "text": "Đồng ý cho nhập ngũ",
-      "effects": { "anNinh": 3, "kinhTe": -1, "doanKet": -2, "niemTin": 3 }
+      "text": "Ủng hộ",
+      "effects": { "kinhTe": 3, "doanKet": -1, "niemTin": 1 }
     },
     "right": {
-      "text": "Khuyên ở nhà lo cho gia đình",
-      "effects": { "anNinh": -2, "kinhTe": 1, "doanKet": 2, "niemTin": -1 }
+      "text": "Khuyên giữ việc cũ",
+      "effects": { "kinhTe": -1, "doanKet": 0, "niemTin": 1 }
     },
     "next": null
   },
 
   {
     "id": "e_32",
-    "title": "Em Gái Bị Ốm",
+    "title": "Con Trai Muốn Mua Skin Game",
+    "text": ["Con trai xin tiền mua skin trong game."],
+    "image": "/assets/son.png",
     "role": "any",
-    "text": [
-      "Con gái đột nhiên bị sốt cao.",
-      " Thuốc men lúc này rất đắt và hiếm."
-    ],
-    "image": "/assets/daughter.png",
     "left": {
-      "text": "Mua thuốc tốt",
-      "effects": { "anNinh": 0, "kinhTe": -2, "doanKet": 2, "niemTin": 0 }
+      "text": "Cho mua",
+      "effects": { "kinhTe": -1, "doanKet": 2, "niemTin": 1 }
     },
     "right": {
-      "text": "Dùng thảo dược",
-      "effects": { "anNinh": -1, "kinhTe": 1, "doanKet": -1, "niemTin": -1 }
+      "text": "Không mua",
+      "effects": { "kinhTe": 1, "doanKet": -2, "niemTin": -1 }
     },
     "next": null
   },
 
   {
     "id": "e_33",
-    "title": "Chồng Bị Mời Làm Đội Trưởng Tự Vệ",
-    "role": "mother",
-    "text": [
-      "Chồng được xã đề xuất làm đội trưởng tự vệ.",
-      " Một vị trí đầy trách nhiệm và nguy hiểm."
-    ],
-    "image": "/assets/father.png",
+    "title": "Con Gái Muốn Theo Trend",
+    "text": ["Con gái muốn mua bộ đồ thời trang mới."],
+    "image": "/assets/daughter.png",
+    "role": "any",
     "left": {
-      "text": "Để cha nhận trách nhiệm",
-      "effects": { "anNinh": 3, "kinhTe": -1, "doanKet": 1, "niemTin": 2 }
+      "text": "Cho mua",
+      "effects": { "kinhTe": -2, "doanKet": 2, "niemTin": 1 }
     },
     "right": {
-      "text": "Khuyên chồng từ chối",
-      "effects": { "anNinh": -1, "kinhTe": 1, "doanKet": -1, "niemTin": -1 }
+      "text": "Từ chối",
+      "effects": { "kinhTe": 1, "doanKet": -2, "niemTin": -1 }
     },
     "next": null
   },
 
   {
     "id": "e_34",
-    "title": "Họ Hàng Xin Sang Ở Nhờ",
-    "role": "any",
-    "text": [
-      "Gia đình họ hàng xa xin sang ở nhờ thời gian ngắn.",
-      " Nhà bạn vốn đã không rộng."
-    ],
+    "title": "Họ Hàng Xin Hỗ Trợ",
+    "text": ["Họ hàng gặp khó khăn xin giúp đỡ."],
     "image": "/assets/e34.png",
+    "role": "any",
     "left": {
-      "text": "Cho họ ở",
-      "effects": { "anNinh": -1, "kinhTe": -1, "doanKet": 3, "niemTin": 1 }
+      "text": "Gửi một ít",
+      "effects": { "kinhTe": -2, "doanKet": 1, "niemTin": 1 }
     },
     "right": {
-      "text": "Từ chối khéo léo",
-      "effects": { "anNinh": 1, "kinhTe": 1, "doanKet": -2, "niemTin": -1 }
+      "text": "Từ chối",
+      "effects": { "kinhTe": 1, "doanKet": -1, "niemTin": -1 }
     },
     "next": null
   },
+
   {
     "id": "e_35",
-    "title": "Quyết Định Về Tương Lai Gia Đình",
+    "title": "Họp Phụ Huynh",
+    "text": ["Trường mở họp phụ huynh, nhưng con trai không muốn bạn đi."],
+    "image": "/assets/son.png",
     "role": "any",
-    "text": [
-      "Gần đây trong làng bàn nhiều về việc tham gia tập thể hoá nông nghiệp.",
-      " Người bạn đời của bạn cho rằng theo tập thể sẽ ổn định hơn.",
-      " Còn bạn lại cân nhắc giữ đất làm ăn riêng để chủ động kinh tế."
-    ],
-    "image": "/assets/house.png",
     "left": {
-      "text": "Theo tập thể hoá",
-      "effects": { "anNinh": 1, "kinhTe": -1, "doanKet": 1, "niemTin": 2 }
+      "text": "Đi họp",
+      "effects": { "kinhTe": -1, "doanKet": 2, "niemTin": 1 }
     },
     "right": {
-      "text": "Giữ đất làm riêng",
-      "effects": { "anNinh": -1, "kinhTe": 2, "doanKet": -1, "niemTin": -1 }
+      "text": "Không đi",
+      "effects": { "kinhTe": 0, "doanKet": -2, "niemTin": -1 }
     },
     "next": null
   },
+
+  {
+    "id": "e_36",
+    "title": "Mua Laptop Cho Con",
+    "text": ["Con trai cần laptop để học."],
+    "image": "/assets/son.png",
+    "role": "any",
+    "left": {
+      "text": "Vay mua máy mới",
+      "effects": { "kinhTe": -3, "doanKet": 1, "niemTin": 2 }
+    },
+    "right": {
+      "text": "Dùng máy cũ",
+      "effects": { "kinhTe": 1, "doanKet": -1, "niemTin": -1 }
+    },
+    "next": null
+  },
+
+  {
+    "id": "e_37",
+    "title": "Khóa Học Online Sức Khỏe",
+    "text": ["Mua học khóa online chăm sóc sức khỏe tinh thần."],
+    "image": "/assets/e10.png",
+    "role": "any",
+    "left": {
+      "text": "Mua",
+      "effects": { "kinhTe": -1, "doanKet": 2, "niemTin": 2 }
+    },
+    "right": {
+      "text": "Không cần thiết",
+      "effects": { "kinhTe": 1, "doanKet": -2, "niemTin": -1 }
+    },
+    "next": null
+  },
+
+  {
+    "id": "e_38",
+    "title": "Tin Giả Trên Mạng",
+    "text": ["Con gái chia sẻ một tin giả trên mạng."],
+    "image": "/assets/daughter.png",
+    "role": "any",
+    "left": {
+      "text": "Giải thích cho con",
+      "effects": { "kinhTe": 0, "doanKet": 2, "niemTin": 2 }
+    },
+    "right": {
+      "text": "La mắng",
+      "effects": { "kinhTe": 0, "doanKet": -2, "niemTin": -2 }
+    },
+    "next": null
+  },
+
+  {
+    "id": "e_39",
+    "title": "Khám Sức Khỏe Định Kỳ",
+    "text": ["Công ty có chương trình khám sức khỏe miễn phí."],
+    "image": "/assets/e39.png",
+    "role": "any",
+    "left": {
+      "text": "Đi khám",
+      "effects": { "kinhTe": -1, "doanKet": 1, "niemTin": 1 }
+    },
+    "right": {
+      "text": "Không đi",
+      "effects": { "kinhTe": 1, "doanKet": -1, "niemTin": -1 }
+    },
+    "next": null
+  },
+
+  {
+    "id": "e_40",
+    "title": "Du Lịch Gia Đình",
+    "text": ["Gia đình muốn đi du lịch cuối tuần."],
+    "image": "/assets/e40.png",
+    "role": "any",
+    "left": {
+      "text": "Đi du lịch",
+      "effects": { "kinhTe": -3, "doanKet": 3, "niemTin": 2 }
+    },
+    "right": {
+      "text": "Hoãn lại",
+      "effects": { "kinhTe": 2, "doanKet": -1, "niemTin": -1 }
+    },
+    "next": null
+  },
+
   {
     "id": "END_KINHTE",
-    "title": "Gia Đình Kiệt Quệ",
+    "title": "Khủng Hoảng Tài Chính Gia Đình",
     "role": "any",
-    "text": [
-      "Sự khó khăn về kinh tế đã dồn gia đình vào đường cùng.",
-      " Trong thời kỳ xoá đói giảm nghèo, nhiều gia đình cũng rơi vào tình cảnh như vậy."
-    ],
-    "image": "/assets/ed4.png",
-    "left": null,
-    "right": null,
-    "next": null
-  },
-  {
-    "id": "END_ANNINH",
-    "title": "Gia Đình An Ninh",
-    "role": "any",
-    "text": [
-      "Gia đình bạn bị cuốn vào vòng xoáy bất ổn của thời cuộc.",
-      " Khi an ninh không còn được đảm bảo, mọi nỗ lực giữ vững tổ ấm đều trở nên vô vọng."
-    ],
     "image": "/assets/ed1.png",
+    "text": [
+      "Những áp lực chi tiêu và biến động kinh tế đã khiến tài chính gia đình cạn kiệt.",
+      " Dù cố gắng, gia đình buộc phải tạm dừng hành trình để ổn định lại kinh tế."
+    ],
     "left": null,
     "right": null,
     "next": null
   },
+
   {
     "id": "END_DOANKET",
-    "title": "Gia Đình Đoàn Kết",
+    "title": "Gia Đình Rạn Nứt",
     "role": "any",
+    "image": "/assets/ed2.png",
     "text": [
-      "Sự rạn nứt trong gia đình khiến tinh thần chung bị phá vỡ.",
-      " Giữa biến động thời đại, một gia đình thiếu đoàn kết khó lòng vượt qua thử thách."
+      "Những mâu thuẫn nhỏ tích tụ, khác biệt thế hệ và áp lực thời đại khiến sự gắn kết gia đình tan vỡ.",
+      " Không còn tiếng cười chung bàn ăn, chỉ còn khoảng cách."
     ],
-    "image": "/assets/ed4.png",
     "left": null,
     "right": null,
     "next": null
   },
+
   {
     "id": "END_NIEMTIN",
-    "title": "Gia Đình Niềm Tin",
+    "title": "Niềm Tin Sụp Đổ",
     "role": "any",
+    "image": "/assets/ed3.png",
     "text": [
-      "Niềm tin cạn kiệt khiến gia đình không thể tiến bước trong thời kỳ đổi thay.",
-      " Tinh thần là chỗ dựa quan trọng nhất — và nó đã không còn."
+      "Nhịp sống nhanh, áp lực học hành và việc làm bào mòn tinh thần gia đình.",
+      " Khi niềm tin chung không còn, gia đình không thể tiến bước."
     ],
-    "image": "/assets/ed4.png",
     "left": null,
     "right": null,
     "next": null
   },
+
   {
     "id": "END_EVENT_LIMIT",
+    "title": "Một Năm Ý Nghĩa",
     "role": "any",
-    "title": "Hết thời gian",
-    "text": "Gia đình bạn đã trải qua 20 sự kiện. Đây là kết thúc hành trình!",
     "image": "/assets/ed.png",
+    "text": [
+      "Gia đình bạn đã trải qua 20 sự kiện — vui có, buồn có, thử thách có.",
+      " Tất cả tạo nên một năm đầy dấu ấn, giúp gia đình hiểu nhau hơn."
+    ],
     "left": null,
     "right": null,
     "next": null

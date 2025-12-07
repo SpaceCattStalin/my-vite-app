@@ -19,14 +19,6 @@ export type EventNode = {
 };
 
 export type GameState = {
-    // currentNode: EventNode | null,
-    // stats: {
-    //     kinhTe: number;
-    //     doanKet: number;
-    //     anNinh: number;
-    //     niemTin: number;
-    // },
-    // applyChoice: (choice: Choice) => void;
     currentNode: EventNode | null;
     list: EventLinkedList;
     seen: Set<string>;
@@ -35,7 +27,6 @@ export type GameState = {
     stats: {
         kinhTe: number;
         doanKet: number;
-        anNinh: number;
         niemTin: number;
     };
 

@@ -28,7 +28,7 @@ export default function Menu({ onPlay }: MenuProps) {
                 </button>
 
                 <div className="text-md italic mt-1">
-                    Một trò chơi tương tác về gia đình Việt Nam thời kỳ chuyển mình
+                    Một trò chơi tương tác về gia đình Việt Nam thời kỳ quá độ lên xã hội chủ nghĩa
                 </div>
             </div>
         </div>
